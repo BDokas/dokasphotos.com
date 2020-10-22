@@ -1,12 +1,53 @@
 import React from 'react';
- 
-const Contact = () => {
-    return (
-       <div>
-          <h1>Contact US</h1>
-          <p>Contact US page body content</p>
-       </div>
-    );
+
+class Contact extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         name: '',
+         email: '',
+         message: ''
+      }
+   }
+
+   render() {
+      return (
+         <div>
+            <form id="contact-form" onSubmit={this.handleSubmit.bind(this)}>
+               <div className="form-group">
+                  <label htmlFor="name">Name</label>
+                  <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} required/>
+               </div>
+               <div className="form-group">
+                  <label htmlFor="inputEmail">Email address</label>
+                  <input type="text" className="form-control" value={this.state.email} onChange={this.onEmailChange.bind(this)} required/>
+               </div>
+               <div className="form-group">
+                  <label htmlFor="message">Message</label>
+                  <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} required/>
+               </div>
+               <button type="submit" className="submit-button">Submit</button>
+            </form>
+         </div>
+      )
+   }
+
+   onNameChange(event) {
+      this.setState({name: event.target.value})
+   }
+
+   onEmailChange(event) {
+      this.setState({email: event.target.value})
+   }
+
+   onMessageChange(event) {
+      this.setState({message: event.target.value})
+   }
+
+   handleSubmit(event) {
+      // TODO actually send the email lol
+      console.log("submitted")
+   }
 }
- 
+
 export default Contact;

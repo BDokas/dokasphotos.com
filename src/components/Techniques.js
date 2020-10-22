@@ -43,7 +43,9 @@ function Techniques() {
       </p>
          <ul>
             <li>
-               <NavLink to="/techniques/ground_glass">How To Ground Your Own Glass</NavLink>
+               <NavLink to="/techniques/ground_glass">
+                  How To Ground Your Own Glass
+          </NavLink>
             </li>
             <li class="quiet">
                An inexpensive way to make a brighter ground glass with better
@@ -53,13 +55,9 @@ function Techniques() {
 
          <Route path="/techniques/flower_prints" component={Flower_Prints} />
          <Route path="/techniques/making_prints" component={Making_Prints} />
-         <Route
-            path="/techniques/making_prints/details"
-            component={Making_Prints_Details}
-         />
+         <Route path="/techniques/making_prints/details" component={Making_Prints_Details} />
          <Route path="/techniques/cameras" component={Camera} />
          <Route path="/techniques/enlarger" component={Enlarger} />
-
          <Route path="/techniques/ground_glass" component={Ground_Glass} />
       </div>
    );
@@ -426,7 +424,10 @@ const Ground_Glass = () => {
       </p>
          <h3>Grinding The Blank</h3>
          <div class="rightw">
-            <img src={require("../img/web/ground_glass.jpg")} alt="Grinding the glass" />
+            <img
+               src={require("../img/web/ground_glass.jpg")}
+               alt="Grinding the glass"
+            />
          </div>
          <p>
             To grind the blank, you will need a small &frac14;" thick sheet of glass
