@@ -4,10 +4,10 @@ const home = () => {
     return (
         <div>
             <h1>The Photography of Dick Dokas</h1>
-            <div class="imagewell-big">
-                <div class="dropshadow-big">
-                    <div class="dropshadowBL">
-                        <div class="dropshadowTR">
+            <div className="imagewell-big">
+                <div className="dropshadow-big">
+                    <div className="dropshadowBL">
+                        <div className="dropshadowTR">
                             <a href="galleries/" title="View the galleries">
                                 <img src={require("../img/front/IMG_4603.jpg")} alt="-" />
                             </a>
@@ -15,7 +15,7 @@ const home = () => {
                     </div>
                 </div>
             </div>
-            <br class="spacer" />
+            <br className="spacer" />
             <h4>
                 &ldquo;Wells - Retrochoir and Lady Chapel&rdquo; &ndash;{" "}
                 <a href="/galleries/great_britain/wells_-_retrochoir_and_lady_chapel/">

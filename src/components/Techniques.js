@@ -12,13 +12,13 @@ function Techniques() {
             <li>
                <NavLink to="/techniques/flower_prints">On the Flower Prints</NavLink>
             </li>
-            <li class="quiet">The split-toned process.</li>
+            <li className="quiet">The split-toned process.</li>
             <li>
                <NavLink to="/techniques/making_prints">
                   On Making Prints - Overview
           </NavLink>
             </li>
-            <li class="quiet">
+            <li className="quiet">
                An 8"&times;10", silver bromide and unsharp masks.
         </li>
             <li>
@@ -26,15 +26,15 @@ function Techniques() {
                   On Making Prints - Technical Details
           </NavLink>
             </li>
-            <li class="quiet">A detailed synopsis of how I make prints.</li>
+            <li className="quiet">A detailed synopsis of how I make prints.</li>
             <li>
                <NavLink to="/techniques/cameras">My Cameras</NavLink>
             </li>
-            <li class="quiet">The 8"&times;10" cameras I use.</li>
+            <li className="quiet">The 8"&times;10" cameras I use.</li>
             <li>
                <NavLink to="/techniques/enlarger">The Enlarger</NavLink>
             </li>
-            <li class="quiet">The construction of my englarger.</li>
+            <li className="quiet">The construction of my englarger.</li>
          </ul>
          <h2>Articles</h2>
          <p>
@@ -47,7 +47,7 @@ function Techniques() {
                   How To Ground Your Own Glass
           </NavLink>
             </li>
-            <li class="quiet">
+            <li className="quiet">
                An inexpensive way to make a brighter ground glass with better
                resolution.
         </li>
@@ -66,7 +66,7 @@ function Techniques() {
 const Flower_Prints = () => {
    return (
       <div className="technique_popup">
-         <div class="right">
+         <div className="right">
             <img
                src={require("../img/web/flower_print.jpg")}
                alt="Painting red clay on the negative"
@@ -106,7 +106,7 @@ const Flower_Prints = () => {
 const Camera = () => {
    return (
       <div className="technique_popup">
-         <div class="right">
+         <div className="right">
             <img
                src={require("../img/web/deardorff.jpg")}
                alt='My Deardorff 8"&times;10" camera'
@@ -118,8 +118,8 @@ const Camera = () => {
             necessary for close-ups. The lens is a 180mm f5.6 Schneider macro called
             a Makro–Symmar designed for extreme close-ups.
       </p>
-         <br class="spacer" />
-         <div class="right">
+         <br className="spacer" />
+         <div className="right">
             <img
                src={require("../img/web/ikeda.jpg")}
                alt='My Deardorff 8"&times;10" camera'
@@ -196,7 +196,7 @@ const Making_Prints_Details = () => {
             throughout the contrast range. Second there is a pronounced increase in
             sharpness. In comparison, even a contact print looks fuzzy!
       </p>
-         <div class="right">
+         <div className="right">
             <img
                src={require("../img/web/pin_registration.jpg")}
                alt="My pin registration device"
@@ -221,7 +221,7 @@ const Making_Prints_Details = () => {
             the light path while printing. However, that is, at best, a rather crude
             method.
       </p>
-         <div class="left">
+         <div className="left">
             <img
                src={require("../img/web/dodging_mask.jpg")}
                alt="Drawing a dodging mask"
@@ -236,7 +236,7 @@ const Making_Prints_Details = () => {
             allowing more light to pass and creating a burning mask.
       </p>
          <h3>Burning Mask</h3>
-         <div class="right">
+         <div className="right">
             <img
                src={require("../img/web/burning_mask.jpg")}
                alt="Cutting out a burning mask"
@@ -261,7 +261,7 @@ const Making_Prints_Details = () => {
             the different masks is to much more precisely control the light that
             lands on the photographic paper.
       </p>
-         <div class="left">
+         <div className="left">
             <img
                src={require("../img/web/negative_carrier.jpg")}
                alt="A view of negative carrier"
@@ -271,8 +271,8 @@ const Making_Prints_Details = () => {
             Here we have the negative carrier with the sandwich of negative and
             unsharp mask over a sheet of anti-Newton glass.
       </p>
-         <br class="spacer" />
-         <div class="right">
+         <br className="spacer" />
+         <div className="right">
             <img
                src={require("../img/web/diffusion_plastic.jpg")}
                alt="The carrier with diffusion plastic added"
@@ -284,8 +284,8 @@ const Making_Prints_Details = () => {
         mask will be taped on top. The light box will ensure correct
         registration before taping it in place.
       </p>
-         <br class="spacer" />
-         <div class="left">
+         <br className="spacer" />
+         <div className="left">
             <img
                src={require("../img/web/assembly.jpg")}
                alt="The final assembly"
@@ -315,7 +315,7 @@ const Enlarger = () => {
             picture.
       </p>
          <h3>Left Side</h3>
-         <div class="right">
+         <div className="right">
             <img
                src={require("../img/web/enlarger_left.jpg")}
                alt="The left side of the enlarger"
@@ -329,7 +329,7 @@ const Enlarger = () => {
             print.
       </p>
          <h3>Right Side</h3>
-         <div class="left">
+         <div className="left">
             <img
                src={require("../img/web/enlarger_right.jpg")}
                alt="The right side of the enlarger"
@@ -340,7 +340,7 @@ const Enlarger = () => {
             constructed.
       </p>
          <h3>Front &amp; Door Open</h3>
-         <div class="rightw">
+         <div className="rightw">
             <img
                src={require("../img/web/enlarger_front.jpg")}
                alt="The front side of the enlarger"
@@ -365,7 +365,7 @@ const Enlarger = () => {
         put the filter in when you are changing filters in the dark.
       </p>
          <h3>Underside</h3>
-         <div class="leftw">
+         <div className="leftw">
             <img
                src={require("../img/web/enlarger_bottom.jpg")}
                alt="The underside of the enlarger"
@@ -423,7 +423,7 @@ const Ground_Glass = () => {
         2mm thick is easy to break.
       </p>
          <h3>Grinding The Blank</h3>
-         <div class="rightw">
+         <div className="rightw">
             <img
                src={require("../img/web/ground_glass.jpg")}
                alt="Grinding the glass"
@@ -507,55 +507,55 @@ const Ground_Glass = () => {
                <td>Inches</td>
                <td>Micro Size</td>
             </tr>
-            <tr class="even">
+            <tr className="even">
                <td>Si Carbide</td>
                <td>40</td>
                <td>0.0258</td>
                <td>684</td>
             </tr>
-            <tr class="odd">
+            <tr className="odd">
                <td>Si Carbide</td>
                <td>60</td>
                <td>0.0160</td>
                <td>406</td>
             </tr>
-            <tr class="even">
+            <tr className="even">
                <td>Si Carbide</td>
                <td>120</td>
                <td>0.0056</td>
                <td>142</td>
             </tr>
-            <tr class="odd">
+            <tr className="odd">
                <td>Si Carbide</td>
                <td>220</td>
                <td>0.0026</td>
                <td>66</td>
             </tr>
-            <tr class="even">
+            <tr className="even">
                <td>Si Carbide</td>
                <td>320</td>
                <td>0.0013</td>
                <td>32</td>
             </tr>
-            <tr class="odd">
+            <tr className="odd">
                <td>Si Carbide</td>
                <td>500</td>
                <td>0.0007</td>
                <td>16</td>
             </tr>
-            <tr class="even">
+            <tr className="even">
                <td>Al Oxide</td>
                <td>&nbsp;</td>
                <td>0.0005</td>
                <td>12</td>
             </tr>
-            <tr class="odd">
+            <tr className="odd">
                <td>Al Oxide</td>
                <td>&nbsp;</td>
                <td>0.0002</td>
                <td>5</td>
             </tr>
-            <tr class="even">
+            <tr className="even">
                <td>Al Oxide</td>
                <td>&nbsp;</td>
                <td>0.0001</td>

@@ -20,44 +20,48 @@ const Pricing = () => {
         for details.
       </p>
             <table>
-                <tr>
-                    <th colspan="4">Normal Prints</th>
-                </tr>
-                <tr>
-                    <td>Print Size</td>
-                    <td>Matted &amp; Framed Size</td>
-                    <td>Matted Price</td>
-                    <td>Matted, Overmatted &amp; Framed Price</td>
-                </tr>
-                <tr class="even">
-                    <td>11"&times;14"</td>
-                    <td>16"&times;20"</td>
-                    <td>$135</td>
-                    <td>$190</td>
-                </tr>
-                <tr class="odd">
-                    <td>16"&times;20"</td>
-                    <td>22"&times;28"</td>
-                    <td>$190</td>
-                    <td>$265</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <th colSpan="4">Normal Prints</th>
+                    </tr>
+                    <tr>
+                        <td>Print Size</td>
+                        <td>Matted &amp; Framed Size</td>
+                        <td>Matted Price</td>
+                        <td>Matted, Overmatted &amp; Framed Price</td>
+                    </tr>
+                    <tr className="even">
+                        <td>11"&times;14"</td>
+                        <td>16"&times;20"</td>
+                        <td>$135</td>
+                        <td>$190</td>
+                    </tr>
+                    <tr className="odd">
+                        <td>16"&times;20"</td>
+                        <td>22"&times;28"</td>
+                        <td>$190</td>
+                        <td>$265</td>
+                    </tr>
+                </tbody>
             </table>
             <table>
-                <tr>
-                    <th colspan="4">Flower Prints</th>
-                </tr>
-                <tr class="even">
-                    <td>11"&times;14"</td>
-                    <td>16"&times;20"</td>
-                    <td>$155</td>
-                    <td>$210</td>
-                </tr>
-                <tr class="odd">
-                    <td>16"&times;20"</td>
-                    <td>22"&times;28"</td>
-                    <td>$215</td>
-                    <td>$290</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <th colSpan="4">Flower Prints</th>
+                    </tr>
+                    <tr className="even">
+                        <td>11"&times;14"</td>
+                        <td>16"&times;20"</td>
+                        <td>$155</td>
+                        <td>$210</td>
+                    </tr>
+                    <tr className="odd">
+                        <td>16"&times;20"</td>
+                        <td>22"&times;28"</td>
+                        <td>$215</td>
+                        <td>$290</td>
+                    </tr>
+                </tbody>
             </table>
             <p>
                 6% sales tax will be added to orders shipped within Michigan. Shipping
@@ -78,7 +82,7 @@ const Pricing = () => {
                     English Cathedrals
         </a>
             </h2>
-            <div class="rightw">
+            <div className="rightw">
                 <img src="/img/web/portfolio.jpg" alt="A view of a printed portfolio" />
             </div>
             <p>

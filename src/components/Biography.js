@@ -2,8 +2,8 @@ import React from "react";
 
 const biography = () => {
     return (
-        <div class="biography">
-            <div class="rightw">
+        <div className="biography">
+            <div className="rightw">
 			    <img src="/img/web/biography.jpg" alt="Dick Dokas" />
 		    </div>
 		    <p>
