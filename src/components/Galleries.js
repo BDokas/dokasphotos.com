@@ -5,17 +5,17 @@ class Galleries extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            photos: {}
+            galleries: {}
         };
     }
 
-    getPhotoData() {
+    getGalleryData() {
         $.ajax({
-            url: './photos.json',
+            url: './galleries.json',
             dataType: 'json',
             cache: false,
             success: function (data) {
-                this.setState({ photos: data });
+                this.setState({ galleries: data });
             }.bind(this),
             error: function (xhr, status, err) {
                 console.log(err);
@@ -25,18 +25,42 @@ class Galleries extends Component {
     }
 
     componentDidMount() {
-        this.getPhotoData();
+        this.getGalleryData();
+    }
+
+    getImage(gallery) {
+        var img = ""
+        try {
+            img = require("../img/"+gallery+"/front.jpg");
+        } catch (err) {
+            img = require("../img/front/IMG_4709.jpg");
+        }
+
+        return(img);
     }
 
 
-    render(props) {
-        if (this.props.data) {
+    render() {
+        var gallery_render = [];
 
+        if (this.state.galleries.names){
+            var galleries = this.state.galleries.names;
+
+            for (var gallery of galleries) {
+                gallery_render.push(
+                    <div className="imagewell">
+                        <span><a href={gallery + "/"} title={"View the photos in the " + gallery + " gallery"}>{gallery}</a></span>
+                        <div class="dropshadow"><div class="dropshadowBL"><div class="dropshadowTR">
+                            <a href={gallery + "/"} title={"View the photos in the " + gallery + " gallery"}><img src={this.getImage(gallery)} alt={gallery} /></a>
+                        </div></div></div>
+                    </div>
+                )
+            }
         }
 
         return (
             <div>
-                <p>hi</p>
+                {gallery_render}
             </div>
         );
     }
