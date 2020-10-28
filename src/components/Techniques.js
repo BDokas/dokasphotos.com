@@ -55,7 +55,10 @@ function Techniques() {
 
          <Route path="/techniques/flower_prints" component={Flower_Prints} />
          <Route path="/techniques/making_prints" component={Making_Prints} />
-         <Route path="/techniques/making_prints/details" component={Making_Prints_Details} />
+         <Route
+            path="/techniques/making_prints/details"
+            component={Making_Prints_Details}
+         />
          <Route path="/techniques/cameras" component={Camera} />
          <Route path="/techniques/enlarger" component={Enlarger} />
          <Route path="/techniques/ground_glass" component={Ground_Glass} />
@@ -94,9 +97,9 @@ const Flower_Prints = () => {
             leaving the lightest parts silver hence the name split toned.
       </p>
          <p>
-            <a href="/galleries/flowers/" title="View the Flowers gallery">
+            <NavLink to="/galleries/flowers_on_white" title="View the Flowers gallery">
                View the Flowers gallery
-        </a>
+            </NavLink>
         .
       </p>
       </div>

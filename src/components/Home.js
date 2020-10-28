@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const home = () => {
     return (
@@ -8,9 +9,9 @@ const home = () => {
                 <div className="dropshadow-big">
                     <div className="dropshadowBL">
                         <div className="dropshadowTR">
-                            <a href="galleries/" title="View the galleries">
+                            <NavLink to="/galleries" title="View the galleries">
                                 <img src={require("../img/front/IMG_4603.jpg")} alt="-" />
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

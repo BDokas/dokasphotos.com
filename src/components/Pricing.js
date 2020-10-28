@@ -16,8 +16,8 @@ const Pricing = () => {
             <p>
                 Prints are offered in two sizes. They are mounted on white acid-free
                 4-ply 100% cotton rag museum board and then overmatted using the same
-        museum board. Frames are silver metal. <NavLink to="/contact">Contact</NavLink>{" "}
-        for details.
+        museum board. Frames are silver metal.{" "}
+                <NavLink to="/contact">Contact</NavLink> for details.
       </p>
             <table>
                 <tbody>
@@ -105,6 +105,5 @@ const Pricing = () => {
         </div>
     );
 };
-
 
 export default Pricing;

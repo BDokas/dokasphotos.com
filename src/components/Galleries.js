@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import GalleryView from "./GalleryView";
-import { NavLink, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import $ from "jquery";
 
 class Galleries extends Component {
@@ -12,8 +11,9 @@ class Galleries extends Component {
     }
 
     getGalleryData() {
+        // Retrieve gallery information
         $.ajax({
-            url: "./galleries.json",
+            url: "../galleries.json",
             dataType: "json",
             cache: false,
             success: function (data) {
@@ -35,6 +35,7 @@ class Galleries extends Component {
         try {
             img = require("../img/" + gallery + "/front.jpg");
         } catch (err) {
+            // TODO replace this with something
             img = require("../img/front/IMG_4709.jpg");
         }
 
@@ -56,34 +57,38 @@ class Galleries extends Component {
                 gallery_render.push(
                     <div className="imagewell">
                         <span>
-                            <NavLink
+                            <Link
                                 to={"/galleries/" + gallery}
                                 title={"View the photos in the " + gallery_name + " gallery"}
                             >
                                 {gallery_name}
-                            </NavLink>
+                            </Link>
                         </span>
-                        <div class="dropshadow">
-                            <div class="dropshadowBL">
-                                <div class="dropshadowTR">
-                                    <NavLink
+                        <div className="dropshadow">
+                            <div className="dropshadowBL">
+                                <div className="dropshadowTR">
+                                    <Link
                                         to={"/galleries/" + gallery}
                                         title={
                                             "View the photos in the " + gallery_name + " gallery"
                                         }
                                     >
                                         <img src={this.getImage(gallery)} alt={gallery} />
-                                    </NavLink>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
-                        <Route path={"/galleries/" + gallery} render={(props) => ( <GalleryView gallery={gallery}/>)}/>
                     </div>
                 );
             }
         }
 
-        return <div>{gallery_render}</div>;
+        return (
+            <div>
+                <h1>Galleries</h1>
+                {gallery_render}
+            </div>
+        );
     }
 }
 
