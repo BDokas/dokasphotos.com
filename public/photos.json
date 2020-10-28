@@ -3,629 +3,629 @@
         {
             "name": "grand_jorasses",
             "title": "Grand Jorasses",
-            "img": "../img/alps/IMG_4408-thumb.jpg"
+            "img": "IMG_4408-thumb.jpg"
         },
         {
             "name": "climber_on_the_aiguilles_of_charmonix",
             "title": "Climber on the Aiguilles of Charmonix",
-            "img": "../img/alps/IMG_4681-thumb.jpg"
+            "img": "IMG_4681-thumb.jpg"
         },
         {
             "name": "church_portico_zermat",
             "title": "Church Portico @ Zermat",
-            "img": "../img/alps/IMG_4423-thumb.jpg"
+            "img": "IMG_4423-thumb.jpg"
         },
         {
             "name": "aiguilles_de_charmoz",
             "title": "Aiguilles de Charmoz",
-            "img": "../img/alps/IMG_4425-thumb.jpg"
+            "img": "IMG_4425-thumb.jpg"
         },
         {
             "name": "ceiling_of_chapel_blatten",
             "title": "Ceiling of Chapel Blatten",
-            "img": "../img/alps/IMG_4417-thumb.jpg"
+            "img": "IMG_4417-thumb.jpg"
         },
         {
             "name": "church_lotschental",
             "title": "Church @ Lotschental",
-            "img": "../img/alps/IMG_4410-thumb.jpg"
+            "img": "IMG_4410-thumb.jpg"
         },
         {
             "name": "aiguilles_de_chamonix_cirque",
             "title": "Aiguilles de Chamonix Cirque",
-            "img": "../img/alps/IMG_4420-thumb.jpg"
+            "img": "IMG_4420-thumb.jpg"
         },
         {
             "name": "toadstool_footing_on_barn",
             "title": "Toadstool Footing on Barn",
-            "img": "../img/alps/IMG_4403-thumb.jpg"
+            "img": "IMG_4403-thumb.jpg"
         },
         {
             "name": "eiger_from_the_schilthorn",
             "title": "Eiger from the Schilthorn",
-            "img": "../img/alps/IMG_4013-thumb.jpg"
+            "img": "IMG_4013-thumb.jpg"
         }
     ],
     "canada": [
         {
             "name": "neils_harbor",
             "title": "Neil's Harbor",
-            "img": "../img/canada/Neils-Harbor-thumb.jpg"
+            "img": "Neils-Harbor-thumb.jpg"
         },
         {
             "name": "church_cape_breton",
             "title": "Church @ Cape Breton",
-            "img": "../img/canada/IMG_4328-thumb.jpg"
+            "img": "IMG_4328-thumb.jpg"
         },
         {
             "name": "sand_river_alcove_stream",
             "title": "Sand River Alcove & Stream",
-            "img": "../img/canada/IMG_4325-thumb.jpg"
+            "img": "IMG_4325-thumb.jpg"
         },
         {
             "name": "cemetery_in_mist",
             "title": "Cemetery in Mist",
-            "img": "../img/canada/IMG_3963-thumb.jpg"
+            "img": "IMG_3963-thumb.jpg"
         },
         {
             "name": "bunch_berries",
             "title": "Bunch Berries",
-            "img": "../img/canada/IMG_3962-thumb.jpg"
+            "img": "IMG_3962-thumb.jpg"
         },
         {
             "name": "window_thimble_berries",
             "title": "Window & Thimble Berries",
-            "img": "../img/canada/IMG_3959-thumb.jpg"
+            "img": "IMG_3959-thumb.jpg"
         }
     ],
     "canadian_rockies": [
         {
             "name": "tree_and_fall",
             "title": "Tree and Fall",
-            "img": "../img/canadian_rockies/Tree-and-Fall-thumb.jpg"
+            "img": "Tree-and-Fall-thumb.jpg"
         },
         {
             "name": "beauty_creek",
             "title": "Beauty Creek",
-            "img": "../img/canadian_rockies/Beauty-Creek-thumb.jpg"
+            "img": "Beauty-Creek-thumb.jpg"
         },
         {
             "name": "rock_and_rapids",
             "title": "Rock and Rapids",
-            "img": "../img/canadian_rockies/Rock-and-Rapids-thumb.jpg"
+            "img": "Rock-and-Rapids-thumb.jpg"
         },
         {
             "name": "pyramid_lake",
             "title": "Pyramid Lake",
-            "img": "../img/canadian_rockies/Pyramid-Lake-thumb.jpg"
+            "img": "Pyramid-Lake-thumb.jpg"
         }
     ],
     "cathedral_portfolio": [
         {
             "name": "fountains_abby",
             "title": "Fountains Abby",
-            "img": "../img/cathedral_portfolio/IMG_4646-thumb.jpg"
+            "img": "IMG_4646-thumb.jpg"
         },
         {
             "name": "central_crossing_-_norwich",
             "title": "Central Crossing - Norwich",
-            "img": "../img/cathedral_portfolio/IMG_4641-thumb.jpg"
+            "img": "IMG_4641-thumb.jpg"
         },
         {
             "name": "lady_chapel_ceiling_-_wells",
             "title": "Lady Chapel Ceiling - Wells",
-            "img": "../img/cathedral_portfolio/IMG_4643-thumb.jpg"
+            "img": "IMG_4643-thumb.jpg"
         },
         {
             "name": "three_statues_-_wells",
             "title": "Three Statues - Wells",
-            "img": "../img/cathedral_portfolio/IMG_4639-thumb.jpg"
+            "img": "IMG_4639-thumb.jpg"
         },
         {
             "name": "angel_choir_column_-_lincoln",
             "title": "Angel Choir Column - Lincoln",
-            "img": "../img/cathedral_portfolio/IMG_4636-thumb.jpg"
+            "img": "IMG_4636-thumb.jpg"
         },
         {
             "name": "five_sisters_window_-_york",
             "title": "Five Sisters Window - York",
-            "img": "../img/cathedral_portfolio/IMG_4630-thumb.jpg"
+            "img": "IMG_4630-thumb.jpg"
         },
         {
             "name": "chapter_house_central_column_-_wells",
             "title": "Chapter House Central Column - Wells",
-            "img": "../img/cathedral_portfolio/IMG_4627-thumb.jpg"
+            "img": "IMG_4627-thumb.jpg"
         },
         {
             "name": "cloister_ceiling_-_gloucester",
             "title": "Cloister Ceiling - Gloucester",
-            "img": "../img/cathedral_portfolio/IMG_4619-thumb.jpg"
+            "img": "IMG_4619-thumb.jpg"
         },
         {
             "name": "crypt_with_figure_-_salisbury",
             "title": "Crypt with Figure - Salisbury",
-            "img": "../img/cathedral_portfolio/IMG_4618-thumb.jpg"
+            "img": "IMG_4618-thumb.jpg"
         },
         {
             "name": "lantern_screen_-_ely",
             "title": "Lantern Screen - Ely",
-            "img": "../img/cathedral_portfolio/IMG_4614-thumb.jpg"
+            "img": "IMG_4614-thumb.jpg"
         },
         {
             "name": "nave_-_exeter",
             "title": "Nave - Exeter",
-            "img": "../img/cathedral_portfolio/IMG_4610-thumb.jpg"
+            "img": "IMG_4610-thumb.jpg"
         }
     ],
     "flowers_on_black": [
         {
             "name": "cattleya",
             "title": "Cattleya",
-            "img": "../img/flowers_on_black/Cattleya-thumb.jpg"
+            "img": "Cattleya-thumb.jpg"
         },
         {
             "name": "star-tulip",
             "title": "Star-Tulip",
-            "img": "../img/flowers_on_black/Star-Tulip-thumb.jpg"
+            "img": "Star-Tulip-thumb.jpg"
         },
         {
             "name": "dancing_tulip",
             "title": "Dancing Tulip",
-            "img": "../img/flowers_on_black/Dancing-Tulip-thumb.jpg"
+            "img": "Dancing-Tulip-thumb.jpg"
         },
         {
             "name": "pale_moth_orchid",
             "title": "Pale Moth Orchid",
-            "img": "../img/flowers_on_black/Pale-Moth-Orchid-thumb.jpg"
+            "img": "Pale-Moth-Orchid-thumb.jpg"
         },
         {
             "name": "moth_orchid",
             "title": "Moth Orchid",
-            "img": "../img/flowers_on_black/Moth-Orchid-thumb.jpg"
+            "img": "Moth-Orchid-thumb.jpg"
         },
         {
             "name": "narcisuss",
             "title": "Narcisuss",
-            "img": "../img/flowers_on_black/Narcisuss-thumb.jpg"
+            "img": "Narcisuss-thumb.jpg"
         },
         {
             "name": "apple_blossom_orchid",
             "title": "Apple Blossom Orchid",
-            "img": "../img/flowers_on_black/Apple-Blossom-Orchid-thumb.jpg"
+            "img": "Apple-Blossom-Orchid-thumb.jpg"
         },
         {
             "name": "freebird",
             "title": "Freebird",
-            "img": "../img/flowers_on_black/Freebird-thumb.jpg"
+            "img": "Freebird-thumb.jpg"
         },
         {
             "name": "phalaenopsis",
             "title": "Phalaenopsis",
-            "img": "../img/flowers_on_black/Phalaenopsis-thumb.jpg"
+            "img": "Phalaenopsis-thumb.jpg"
         }
     ],
     "flowers_on_white": [
         {
             "name": "dahlia",
             "title": "Dahlia",
-            "img": "../img/flowers_on_white/IMG_4586-thumb.jpg"
+            "img": "IMG_4586-thumb.jpg"
         },
         {
             "name": "white_narcissus",
             "title": "White Narcissus",
-            "img": "../img/flowers_on_white/IMG_4585-thumb.jpg"
+            "img": "IMG_4585-thumb.jpg"
         },
         {
             "name": "clemantis",
             "title": "Clemantis",
-            "img": "../img/flowers_on_white/IMG_4582-thumb.jpg"
+            "img": "IMG_4582-thumb.jpg"
         },
         {
             "name": "black-eyed_susan",
             "title": "Black-eyed Susan",
-            "img": "../img/flowers_on_white/IMG_4579-thumb.jpg"
+            "img": "IMG_4579-thumb.jpg"
         },
         {
             "name": "himalayan_irises",
             "title": "Himalayan Irises",
-            "img": "../img/flowers_on_white/IMG_4573-thumb.jpg"
+            "img": "IMG_4573-thumb.jpg"
         },
         {
             "name": "spider_amaryllis",
             "title": "Spider Amaryllis",
-            "img": "../img/flowers_on_white/IMG_4576-thumb.jpg"
+            "img": "IMG_4576-thumb.jpg"
         },
         {
             "name": "glads",
             "title": "Glads",
-            "img": "../img/flowers_on_white/IMG_4567-thumb.jpg"
+            "img": "IMG_4567-thumb.jpg"
         },
         {
             "name": "dogwood",
             "title": "Dogwood",
-            "img": "../img/flowers_on_white/IMG_4564-thumb.jpg"
+            "img": "IMG_4564-thumb.jpg"
         },
         {
             "name": "white_iris",
             "title": "White Iris",
-            "img": "../img/flowers_on_white/IMG_4561-thumb.jpg"
+            "img": "IMG_4561-thumb.jpg"
         },
         {
             "name": "tulips",
             "title": "Tulips",
-            "img": "../img/flowers_on_white/IMG_4558-thumb.jpg"
+            "img": "IMG_4558-thumb.jpg"
         },
         {
             "name": "peony",
             "title": "Peony",
-            "img": "../img/flowers_on_white/IMG_4555-thumb.jpg"
+            "img": "IMG_4555-thumb.jpg"
         },
         {
             "name": "gerbera_daisy",
             "title": "Gerbera Daisy",
-            "img": "../img/flowers_on_white/IMG_4552-thumb.jpg"
+            "img": "IMG_4552-thumb.jpg"
         },
         {
             "name": "two_iris",
             "title": "Two Iris",
-            "img": "../img/flowers_on_white/IMG_4549-thumb.jpg"
+            "img": "IMG_4549-thumb.jpg"
         },
         {
             "name": "mums",
             "title": "Mums",
-            "img": "../img/flowers_on_white/IMG_4544-thumb.jpg"
+            "img": "IMG_4544-thumb.jpg"
         },
         {
             "name": "magnolia",
             "title": "Magnolia",
-            "img": "../img/flowers_on_white/IMG_4543-thumb.jpg"
+            "img": "IMG_4543-thumb.jpg"
         },
         {
             "name": "canadian_thistle",
             "title": "Canadian Thistle",
-            "img": "../img/flowers_on_white/DCP_0721-thumb.jpg"
+            "img": "DCP_0721-thumb.jpg"
         }
     ],
     "grand_canyon": [
         {
             "name": "bright_angel_trail",
             "title": "Bright Angel Trail",
-            "img": "../img/grand_canyon/IMG_4534-thumb.jpg"
+            "img": "IMG_4534-thumb.jpg"
         },
         {
             "name": "storm_over_grand_canyon",
             "title": "Storm over Grand Canyon",
-            "img": "../img/grand_canyon/IMG_4529-thumb.jpg"
+            "img": "IMG_4529-thumb.jpg"
         },
         {
             "name": "shrub_mathers_point",
             "title": "Shrub @ Mather's Point",
-            "img": "../img/grand_canyon/IMG_4538-thumb.jpg"
+            "img": "IMG_4538-thumb.jpg"
         },
         {
             "name": "rock_mathers_point",
             "title": "Rock @ Mather's Point",
-            "img": "../img/grand_canyon/IMG_4526-thumb.jpg"
+            "img": "IMG_4526-thumb.jpg"
         }
     ],
     "great_britain": [
         {
             "name": "durham_-_nave_with_round_window",
             "title": "Durham - Nave with Round Window",
-            "img": "../img/great_britain/IMG_4297-thumb.jpg"
+            "img": "IMG_4297-thumb.jpg"
         },
         {
             "name": "oxford_-_divinity_school",
             "title": "Oxford - Divinity School",
-            "img": "../img/great_britain/IMG_4295-thumb.jpg"
+            "img": "IMG_4295-thumb.jpg"
         },
         {
             "name": "wells_-_chapter_house_central_column",
             "title": "Wells - Chapter House Central Column",
-            "img": "../img/great_britain/IMG_4289-thumb.jpg"
+            "img": "IMG_4289-thumb.jpg"
         },
         {
             "name": "ely_-_lantern",
             "title": "Ely - Lantern",
-            "img": "../img/great_britain/IMG_4290-thumb.jpg"
+            "img": "IMG_4290-thumb.jpg"
         },
         {
             "name": "peterborough_-_central_crossing",
             "title": "Peterborough - Central Crossing",
-            "img": "../img/great_britain/IMG_4275-thumb.jpg"
+            "img": "IMG_4275-thumb.jpg"
         },
         {
             "name": "lincoln_-_central_crossing",
             "title": "Lincoln - Central Crossing",
-            "img": "../img/great_britain/IMG_4274-thumb.jpg"
+            "img": "IMG_4274-thumb.jpg"
         },
         {
             "name": "durham_-_central_crossing",
             "title": "Durham - Central Crossing",
-            "img": "../img/great_britain/IMG_4271-thumb.jpg"
+            "img": "IMG_4271-thumb.jpg"
         },
         {
             "name": "wells_-_nave",
             "title": "Wells - Nave",
-            "img": "../img/great_britain/IMG_4265-thumb.jpg"
+            "img": "IMG_4265-thumb.jpg"
         },
         {
             "name": "norwich_-_cloister",
             "title": "Norwich - Cloister",
-            "img": "../img/great_britain/IMG_4262-thumb.jpg"
+            "img": "IMG_4262-thumb.jpg"
         },
         {
             "name": "wells_-_organ",
             "title": "Wells - Organ",
-            "img": "../img/great_britain/IMG_4604-thumb.jpg"
+            "img": "IMG_4604-thumb.jpg"
         },
         {
             "name": "wells_-_retrochoir_and_lady_chapel",
             "title": "Wells - Retrochoir and Lady Chapel",
-            "img": "../img/great_britain/IMG_4603-thumb.jpg"
+            "img": "IMG_4603-thumb.jpg"
         },
         {
             "name": "lincoln_-_cloister_ceiling",
             "title": "Lincoln - Cloister Ceiling",
-            "img": "../img/great_britain/IMG_4311-thumb.jpg"
+            "img": "IMG_4311-thumb.jpg"
         },
         {
             "name": "lincoln_-_chapter_house",
             "title": "Lincoln - Chapter House",
-            "img": "../img/great_britain/IMG_4308-thumb.jpg"
+            "img": "IMG_4308-thumb.jpg"
         },
         {
             "name": "ely_-_choir",
             "title": "Ely - Choir",
-            "img": "../img/great_britain/IMG_4305-thumb.jpg"
+            "img": "IMG_4305-thumb.jpg"
         },
         {
             "name": "lincoln_-_nave",
             "title": "Lincoln - Nave",
-            "img": "../img/great_britain/IMG_4303-thumb.jpg"
+            "img": "IMG_4303-thumb.jpg"
         },
         {
             "name": "norwich_-_choir_from_central_crossing",
             "title": "Norwich - Choir from Central Crossing",
-            "img": "../img/great_britain/IMG_4301-thumb.jpg"
+            "img": "IMG_4301-thumb.jpg"
         },
         {
             "name": "norwich_-_nave",
             "title": "Norwich - Nave",
-            "img": "../img/great_britain/IMG_4259-thumb.jpg"
+            "img": "IMG_4259-thumb.jpg"
         },
         {
             "name": "exeter_-_choir_ceiling",
             "title": "Exeter - Choir Ceiling",
-            "img": "../img/great_britain/IMG_4253-thumb.jpg"
+            "img": "IMG_4253-thumb.jpg"
         },
         {
             "name": "exeter_-_choir_ceiling_detail",
             "title": "Exeter - Choir Ceiling Detail",
-            "img": "../img/great_britain/IMG_4250-thumb.jpg"
+            "img": "IMG_4250-thumb.jpg"
         },
         {
             "name": "door_stow-on-the-wold",
             "title": "Door @ Stow-on-the-Wold",
-            "img": "../img/great_britain/IMG_4663-thumb.jpg"
+            "img": "IMG_4663-thumb.jpg"
         },
         {
             "name": "hanging_ivy",
             "title": "Hanging Ivy",
-            "img": "../img/great_britain/IMG_4286-thumb.jpg"
+            "img": "IMG_4286-thumb.jpg"
         },
         {
             "name": "kilchurn_castle_-_scotland",
             "title": "Kilchurn Castle - Scotland",
-            "img": "../img/great_britain/IMG_4281-thumb.jpg"
+            "img": "IMG_4281-thumb.jpg"
         },
         {
             "name": "loch_lomond",
             "title": "Loch Lomond",
-            "img": "../img/great_britain/IMG_4278-thumb.jpg"
+            "img": "IMG_4278-thumb.jpg"
         }
     ],
     "great_sand_dunes": [
         {
             "name": "dune_dunettes",
             "title": "Dune & Dunettes",
-            "img": "../img/great_sand_dunes/IMG_4485-thumb.jpg"
+            "img": "IMG_4485-thumb.jpg"
         },
         {
             "name": "gentle_dunes",
             "title": "Gentle Dunes",
-            "img": "../img/great_sand_dunes/IMG_4483-thumb.jpg"
+            "img": "IMG_4483-thumb.jpg"
         },
         {
             "name": "medano_creek",
             "title": "Medano Creek",
-            "img": "../img/great_sand_dunes/IMG_4478-thumb.jpg"
+            "img": "IMG_4478-thumb.jpg"
         },
         {
             "name": "dead_tree",
             "title": "Dead Tree",
-            "img": "../img/great_sand_dunes/IMG_4475-thumb.jpg"
+            "img": "IMG_4475-thumb.jpg"
         },
         {
             "name": "dune_sky",
             "title": "Dune Sky",
-            "img": "../img/great_sand_dunes/IMG_4471-thumb.jpg"
+            "img": "IMG_4471-thumb.jpg"
         },
         {
             "name": "big_pine",
             "title": "Big Pine",
-            "img": "../img/great_sand_dunes/IMG_4467-thumb.jpg"
+            "img": "IMG_4467-thumb.jpg"
         }
     ],
     "greek_islands": [
         {
             "name": "window_at_pyrogos",
             "title": "Window at Pyrogos",
-            "img": "../img/greek_islands/Windw-at-Pyrogos-thumb.jpg"
+            "img": "Windw-at-Pyrogos-thumb.jpg"
         },
         {
             "name": "sleeping_dog-ios",
             "title": "Sleeping Dog-Ios",
-            "img": "../img/greek_islands/Sleeping-Dog-Ios-thumb.jpg"
+            "img": "Sleeping-Dog-Ios-thumb.jpg"
         },
         {
             "name": "bricked_up_door",
             "title": "Bricked up Door",
-            "img": "../img/greek_islands/Bricked-up-Door-thumb.jpg"
+            "img": "Bricked-up-Door-thumb.jpg"
         },
         {
             "name": "church_with_round_hole_at_oia",
             "title": "Church with Round Hole at Oia",
-            "img": "../img/greek_islands/Church-with-Round-Hole-at-Oia-thumb.jpg"
+            "img": "Church-with-Round-Hole-at-Oia-thumb.jpg"
         },
         {
             "name": "ruin_ceiling_at_oia",
             "title": "Ruin Ceiling at Oia",
-            "img": "../img/greek_islands/Ruin-Ceiling-at-Oia-thumb.jpg"
+            "img": "Ruin-Ceiling-at-Oia-thumb.jpg"
         },
         {
             "name": "arch_design_at_church_of_100_doors",
             "title": "Arch Design at Church of 100 Doors",
-            "img": "../img/greek_islands/Arch-Design-at-Church-of-100-thumb.jpg"
+            "img": "Arch-Design-at-Church-of-100-thumb.jpg"
         },
         {
             "name": "atlantis_entrance_paros",
             "title": "Atlantis Entrance Paros",
-            "img": "../img/greek_islands/Atlantis-Entrance-Paros-thumb.jpg"
+            "img": "Atlantis-Entrance-Paros-thumb.jpg"
         },
         {
             "name": "ceiling_of_church_emporio",
             "title": "Ceiling of Church Emporio",
-            "img": "../img/greek_islands/Ceiling-of-Church-Emporio-thumb.jpg"
+            "img": "Ceiling-of-Church-Emporio-thumb.jpg"
         },
         {
             "name": "church_arches_ios",
             "title": "Church Arches Ios",
-            "img": "../img/greek_islands/Church-Arches-Ios-thumb.jpg"
+            "img": "Church-Arches-Ios-thumb.jpg"
         },
         {
             "name": "church_small_window",
             "title": "Church Small Window",
-            "img": "../img/greek_islands/Church-Small-Window-thumb.jpg"
+            "img": "Church-Small-Window-thumb.jpg"
         },
         {
             "name": "design_pyrogos",
             "title": "Design Pyrogos",
-            "img": "../img/greek_islands/Design-Pyrogos-thumb.jpg"
+            "img": "Design-Pyrogos-thumb.jpg"
         },
         {
             "name": "door_with_white_cross",
             "title": "Door with White Cross",
-            "img": "../img/greek_islands/Door-with-White-Cross-thumb.jpg"
+            "img": "Door-with-White-Cross-thumb.jpg"
         },
         {
             "name": "hill_church_on_ios",
             "title": "Hill Church on Ios",
-            "img": "../img/greek_islands/Hill-church-on-Ios-thumb.jpg"
+            "img": "Hill-church-on-Ios-thumb.jpg"
         },
         {
             "name": "homerick_poems_thira",
             "title": "Homerick Poems Thira",
-            "img": "../img/greek_islands/Homerick-Poems-Thira-thumb.jpg"
+            "img": "Homerick-Poems-Thira-thumb.jpg"
         },
         {
             "name": "passage_way_pyrogos",
             "title": "Passage Way Pyrogos",
-            "img": "../img/greek_islands/Passage-Way-Pyrogos-thumb.jpg"
+            "img": "Passage-Way-Pyrogos-thumb.jpg"
         },
         {
             "name": "window_lefkes",
             "title": "Window Lefkes",
-            "img": "../img/greek_islands/Window-Lefkes-thumb.jpg"
+            "img": "Window-Lefkes-thumb.jpg"
         },
         {
             "name": "window_lenicel",
             "title": "Window Lenicel",
-            "img": "../img/greek_islands/Window-Lenicel-thumb.jpg"
+            "img": "Window-Lenicel-thumb.jpg"
         },
         {
             "name": "woman_at_window",
             "title": "Woman at Window",
-            "img": "../img/greek_islands/Woman-at-Window-thumb.jpg"
+            "img": "Woman-at-Window-thumb.jpg"
         }
     ],
     "ireland": [
         {
             "name": "gilroys_pub",
             "title": "Gilroy's Pub",
-            "img": "../img/ireland/Gilroys-Pub-thumb.jpg"
+            "img": "Gilroys-Pub-thumb.jpg"
         },
         {
             "name": "imbibing_on_castle_st",
             "title": "Imbibing on Castle St.",
-            "img": "../img/ireland/Imbibing-on-Castle-St.-thumb.jpg"
+            "img": "Imbibing-on-Castle-St.-thumb.jpg"
         },
         {
             "name": "door_75",
             "title": "Door #75",
-            "img": "../img/ireland/IMG_4686-thumb.jpg"
+            "img": "IMG_4686-thumb.jpg"
         },
         {
             "name": "door_60",
             "title": "Door #60",
-            "img": "../img/ireland/IMG_4684-thumb.jpg"
+            "img": "IMG_4684-thumb.jpg"
         },
         {
             "name": "glendalough_gravestones",
             "title": "Glendalough Gravestones",
-            "img": "../img/ireland/IMG_4452-thumb.jpg"
+            "img": "IMG_4452-thumb.jpg"
         },
         {
             "name": "farmhouse_dingle",
             "title": "Farmhouse @ Dingle",
-            "img": "../img/ireland/IMG_4448-thumb.jpg"
+            "img": "IMG_4448-thumb.jpg"
         },
         {
             "name": "dunluce_castle",
             "title": "Dunluce Castle",
-            "img": "../img/ireland/IMG_4446-thumb.jpg"
+            "img": "IMG_4446-thumb.jpg"
         }
     ],
     "michigan_ohio": [
         {
             "name": "laurel_creek",
             "title": "Laurel Creek",
-            "img": "../img/michigan_ohio/Laurel-Creek-thumb.jpg"
+            "img": "Laurel-Creek-thumb.jpg"
         },
         {
             "name": "two_pigeons",
             "title": "Two Pigeons",
-            "img": "../img/michigan_ohio/Two-Pigeons-thumb.jpg"
+            "img": "Two-Pigeons-thumb.jpg"
         },
         {
             "name": "laughing_whitefish_falls",
             "title": "Laughing Whitefish Falls",
-            "img": "../img/michigan_ohio/Laughing-Whitefish Falls-thumb.jpg"
+            "img": "Laughing-Whitefish Falls-thumb.jpg"
         },
         {
             "name": "devils_bathtub",
             "title": "Devil's Bathtub",
-            "img": "../img/michigan_ohio/IMG_4709-thumb.jpg"
+            "img": "IMG_4709-thumb.jpg"
         },
         {
             "name": "window_law_quad",
             "title": "Window @ Law Quad",
-            "img": "../img/michigan_ohio/IMG_4691-thumb.jpg"
+            "img": "IMG_4691-thumb.jpg"
         },
         {
             "name": "encircled_tree",
             "title": "Encircled Tree",
-            "img": "../img/michigan_ohio/IMG_4499-thumb.jpg"
+            "img": "IMG_4499-thumb.jpg"
         },
         {
             "name": "tannin_falls",
             "title": "Tannin Falls",
-            "img": "../img/michigan_ohio/IMG_4497-thumb.jpg"
+            "img": "IMG_4497-thumb.jpg"
         },
         {
             "name": "scott_falls",
             "title": "Scott Falls",
-            "img": "../img/michigan_ohio/IMG_4491-thumb.jpg"
+            "img": "IMG_4491-thumb.jpg"
         }
     ],
     "mystic_tulip": [],
@@ -633,322 +633,322 @@
         {
             "name": "bedding",
             "title": "Bedding",
-            "img": "../img/netherlands/Bedding-thumb.jpg"
+            "img": "Bedding-thumb.jpg"
         },
         {
             "name": "corner_store",
             "title": "Corner Store",
-            "img": "../img/netherlands/Corner-Store-thumb.jpg"
+            "img": "Corner-Store-thumb.jpg"
         },
         {
             "name": "five_bridges",
             "title": "Five Bridges",
-            "img": "../img/netherlands/IMG_4703-thumb.jpg"
+            "img": "IMG_4703-thumb.jpg"
         },
         {
             "name": "tile_roof",
             "title": "Tile Roof",
-            "img": "../img/netherlands/IMG_4700-thumb.jpg"
+            "img": "IMG_4700-thumb.jpg"
         },
         {
             "name": "dutch_canal",
             "title": "Dutch Canal",
-            "img": "../img/netherlands/IMG_4697-thumb.jpg"
+            "img": "IMG_4697-thumb.jpg"
         },
         {
             "name": "window_buren",
             "title": "Window @ Buren",
-            "img": "../img/netherlands/IMG_4694-thumb.jpg"
+            "img": "IMG_4694-thumb.jpg"
         },
         {
             "name": "church_thorn",
             "title": "Church @ Thorn",
-            "img": "../img/netherlands/IMG_4657-thumb.jpg"
+            "img": "IMG_4657-thumb.jpg"
         }
     ],
     "southwest": [
         {
             "name": "wave_1",
             "title": "Wave #1",
-            "img": "../img/southwest/Wave1-thumb.jpg"
+            "img": "Wave1-thumb.jpg"
         },
         {
             "name": "wave_2_detail",
             "title": "Wave #2 Detail",
-            "img": "../img/southwest/Wave2-Detail-thumb.jpg"
+            "img": "Wave2-Detail-thumb.jpg"
         },
         {
             "name": "wave_2",
             "title": "Wave #2",
-            "img": "../img/southwest/Wave2-thumb.jpg"
+            "img": "Wave2-thumb.jpg"
         },
         {
             "name": "wave_1_detail",
             "title": "Wave #1 Detail",
-            "img": "../img/southwest/Wave1-Detail-thumb.jpg"
+            "img": "Wave1-Detail-thumb.jpg"
         },
         {
             "name": "wave",
             "title": "Wave",
-            "img": "../img/southwest/Wave-thumb.jpg"
+            "img": "Wave-thumb.jpg"
         },
         {
             "name": "wave_entrance",
             "title": "Wave Entrance",
-            "img": "../img/southwest/Wave-Entrance-thumb.jpg"
+            "img": "Wave-Entrance-thumb.jpg"
         },
         {
             "name": "three_faces",
             "title": "Three Faces",
-            "img": "../img/southwest/Three-Faces-thumb.jpg"
+            "img": "Three-Faces-thumb.jpg"
         },
         {
             "name": "sweep",
             "title": "Sweep",
-            "img": "../img/southwest/Sweep-thumb.jpg"
+            "img": "Sweep-thumb.jpg"
         },
         {
             "name": "skeleton_tree",
             "title": "Skeleton Tree",
-            "img": "../img/southwest/Skeleton-Tree-thumb.jpg"
+            "img": "Skeleton-Tree-thumb.jpg"
         },
         {
             "name": "side_entrance_to_wave",
             "title": "Side Entrance to Wave",
-            "img": "../img/southwest/Side-Entrance-to-Wave-thumb.jpg"
+            "img": "Side-Entrance-to-Wave-thumb.jpg"
         },
         {
             "name": "rock_formations",
             "title": "Rock Formations",
-            "img": "../img/southwest/Rock-Formations-thumb.jpg"
+            "img": "Rock-Formations-thumb.jpg"
         },
         {
             "name": "hoodoos",
             "title": "Hoodoos",
-            "img": "../img/southwest/Hoodoos-thumb.jpg"
+            "img": "Hoodoos-thumb.jpg"
         },
         {
             "name": "ghosts",
             "title": "Ghosts",
-            "img": "../img/southwest/Ghosts-thumb.jpg"
+            "img": "Ghosts-thumb.jpg"
         },
         {
             "name": "candy_canyon",
             "title": "Candy Canyon",
-            "img": "../img/southwest/Candy-Canyon-thumb.jpg"
+            "img": "Candy-Canyon-thumb.jpg"
         },
         {
             "name": "white_bush",
             "title": "White Bush",
-            "img": "../img/southwest/IMG_4454-thumb.jpg"
+            "img": "IMG_4454-thumb.jpg"
         },
         {
             "name": "ice_cave",
             "title": "Ice Cave",
-            "img": "../img/southwest/IMG_4441-thumb.jpg"
+            "img": "IMG_4441-thumb.jpg"
         },
         {
             "name": "white_wave",
             "title": "White Wave",
-            "img": "../img/southwest/IMG_4436-thumb.jpg"
+            "img": "IMG_4436-thumb.jpg"
         },
         {
             "name": "lower_mule_canyon",
             "title": "Lower Mule Canyon",
-            "img": "../img/southwest/IMG_4399-thumb.jpg"
+            "img": "IMG_4399-thumb.jpg"
         },
         {
             "name": "sunlit_cave",
             "title": "Sunlit Cave",
-            "img": "../img/southwest/IMG_4395-thumb.jpg"
+            "img": "IMG_4395-thumb.jpg"
         },
         {
             "name": "road_canyon_ruins",
             "title": "Road Canyon Ruins",
-            "img": "../img/southwest/IMG_4393-thumb.jpg"
+            "img": "IMG_4393-thumb.jpg"
         },
         {
             "name": "sponge_rock",
             "title": "Sponge Rock",
-            "img": "../img/southwest/IMG_4388-thumb.jpg"
+            "img": "IMG_4388-thumb.jpg"
         },
         {
             "name": "rt_95_tree_two_rocks",
             "title": "Rt 95 Tree & Two Rocks",
-            "img": "../img/southwest/IMG_4387-thumb.jpg"
+            "img": "IMG_4387-thumb.jpg"
         },
         {
             "name": "green_river_overlook",
             "title": "Green River Overlook",
-            "img": "../img/southwest/IMG_4383-thumb.jpg"
+            "img": "IMG_4383-thumb.jpg"
         },
         {
             "name": "monarch_cave_city",
             "title": "Monarch Cave City",
-            "img": "../img/southwest/IMG_4380-thumb.jpg"
+            "img": "IMG_4380-thumb.jpg"
         },
         {
             "name": "upper_mule_canyon_ruins",
             "title": "Upper Mule Canyon Ruins",
-            "img": "../img/southwest/IMG_4378-thumb.jpg"
+            "img": "IMG_4378-thumb.jpg"
         },
         {
             "name": "monarch_cave_house",
             "title": "Monarch Cave House",
-            "img": "../img/southwest/IMG_4373-thumb.jpg"
+            "img": "IMG_4373-thumb.jpg"
         },
         {
             "name": "hog_spring",
             "title": "Hog Spring",
-            "img": "../img/southwest/IMG_4372-thumb.jpg"
+            "img": "IMG_4372-thumb.jpg"
         },
         {
             "name": "little_wild_horse",
             "title": "Little Wild Horse",
-            "img": "../img/southwest/IMG_4014-thumb.jpg"
+            "img": "IMG_4014-thumb.jpg"
         }
     ],
     "tetons": [
         {
             "name": "hidden_fall",
             "title": "Hidden Fall",
-            "img": "../img/tetons/IMG_4523-thumb.jpg"
+            "img": "IMG_4523-thumb.jpg"
         },
         {
             "name": "tetons_-_reflection_horiz",
             "title": "Tetons - Reflection (Horiz.)",
-            "img": "../img/tetons/IMG_4520-thumb.jpg"
+            "img": "IMG_4520-thumb.jpg"
         },
         {
             "name": "tetons_-_reflection_vert",
             "title": "Tetons - Reflection (Vert.)",
-            "img": "../img/tetons/IMG_4517-thumb.jpg"
+            "img": "IMG_4517-thumb.jpg"
         },
         {
             "name": "tetons_snake_river",
             "title": "Tetons & Snake River",
-            "img": "../img/tetons/IMG_4515-thumb.jpg"
+            "img": "IMG_4515-thumb.jpg"
         },
         {
             "name": "sunrise_-_mt_moran",
             "title": "Sunrise - Mt. Moran",
-            "img": "../img/tetons/IMG_4512-thumb.jpg"
+            "img": "IMG_4512-thumb.jpg"
         },
         {
             "name": "river_of_light",
             "title": "River of Light",
-            "img": "../img/tetons/IMG_4508-thumb.jpg"
+            "img": "IMG_4508-thumb.jpg"
         },
         {
             "name": "string_lake",
             "title": "String Lake",
-            "img": "../img/tetons/IMG_4502-thumb.jpg"
+            "img": "IMG_4502-thumb.jpg"
         }
     ],
     "united_states_rockies": [
         {
             "name": "white_tree_adams_falls",
             "title": "White Tree Adams Falls",
-            "img": "../img/us_rockies/White-Tree-Adams-Falls-thumb.jpg"
+            "img": "White-Tree-Adams-Falls-thumb.jpg"
         },
         {
             "name": "lake_grandby_in_fog",
             "title": "Lake Grandby in Fog",
-            "img": "../img/us_rockies/Lake-Grandby-in-Fog-thumb.jpg"
+            "img": "Lake-Grandby-in-Fog-thumb.jpg"
         },
         {
             "name": "fall_aspens",
             "title": "Fall Aspens",
-            "img": "../img/us_rockies/Fall-Aspens-thumb.jpg"
+            "img": "Fall-Aspens-thumb.jpg"
         },
         {
             "name": "colorado_headwater_in_fog",
             "title": "Colorado Headwater in Fog",
-            "img": "../img/us_rockies/Colorado-Headwater-in-Fog-thumb.jpg"
+            "img": "Colorado-Headwater-in-Fog-thumb.jpg"
         },
         {
             "name": "aspen_backlite",
             "title": "Aspen Backlite",
-            "img": "../img/us_rockies/Aspen-Backlite-thumb.jpg"
+            "img": "Aspen-Backlite-thumb.jpg"
         }
     ],
     "yosemite": [
         {
             "name": "upper_yosemite_falls",
             "title": "Upper Yosemite Falls",
-            "img": "../img/yosemite/IMG_4706-thumb.jpg"
+            "img": "IMG_4706-thumb.jpg"
         },
         {
             "name": "sunrise_on_the_merced",
             "title": "Sunrise on the Merced",
-            "img": "../img/yosemite/IMG_4677-thumb.jpg"
+            "img": "IMG_4677-thumb.jpg"
         },
         {
             "name": "shadow_fall",
             "title": "Shadow Fall",
-            "img": "../img/yosemite/IMG_4674-thumb.jpg"
+            "img": "IMG_4674-thumb.jpg"
         },
         {
             "name": "half_dome",
             "title": "Half Dome",
-            "img": "../img/yosemite/IMG_4673-thumb.jpg"
+            "img": "IMG_4673-thumb.jpg"
         },
         {
             "name": "ansel_adams",
             "title": "Ansel Adams",
-            "img": "../img/yosemite/IMG_4607-thumb.jpg"
+            "img": "IMG_4607-thumb.jpg"
         },
         {
             "name": "mirror_lake",
             "title": "Mirror Lake",
-            "img": "../img/yosemite/IMG_4595-thumb.jpg"
+            "img": "IMG_4595-thumb.jpg"
         }
     ],
     "zion": [
         {
             "name": "two_trees_in_creek",
             "title": "Two Trees in Creek",
-            "img": "../img/zion/Two-Trees-in-Creek-thumb.jpg"
+            "img": "Two-Trees-in-Creek-thumb.jpg"
         },
         {
             "name": "curved_wall_with_tree",
             "title": "Curved Wall with Tree",
-            "img": "../img/zion/Curved-Wall-with-Tree-thumb.jpg"
+            "img": "Curved-Wall-with-Tree-thumb.jpg"
         },
         {
             "name": "north_canyon_entrance",
             "title": "North Canyon Entrance",
-            "img": "../img/zion/North-Canyon-Entrance-thumb.jpg"
+            "img": "North-Canyon-Entrance-thumb.jpg"
         },
         {
             "name": "hidden_valley",
             "title": "Hidden Valley",
-            "img": "../img/zion/IMG_4715-thumb.jpg"
+            "img": "IMG_4715-thumb.jpg"
         },
         {
             "name": "distance_view_through_trees",
             "title": "Distance View through Trees",
-            "img": "../img/zion/IMG_4712-thumb.jpg"
+            "img": "IMG_4712-thumb.jpg"
         },
         {
             "name": "hidden_valley_wall",
             "title": "Hidden Valley Wall",
-            "img": "../img/zion/IMG_4363-thumb.jpg"
+            "img": "IMG_4363-thumb.jpg"
         },
         {
             "name": "lower_emerald_falls",
             "title": "Lower Emerald Falls",
-            "img": "../img/zion/IMG_4358-thumb.jpg"
+            "img": "IMG_4358-thumb.jpg"
         },
         {
             "name": "fall_white_tree_on_the_virgin_river",
             "title": "Fall White Tree on the Virgin River",
-            "img": "../img/zion/IMG_4357-thumb.jpg"
+            "img": "IMG_4357-thumb.jpg"
         },
         {
             "name": "spring_white_tree_on_the_virgin_river",
             "title": "Spring White Tree on the Virgin River",
-            "img": "../img/zion/IMG_4354-thumb.jpg"
+            "img": "IMG_4354-thumb.jpg"
         }
     ]
 }

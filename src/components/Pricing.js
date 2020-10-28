@@ -75,12 +75,12 @@ const Pricing = () => {
       </p>
             <h2>
                 Limited Edition Portfolio &ndash;{" "}
-                <a
-                    href="/galleries/cathedral_portfolio/"
+                <NavLink
+                    to="/galleries/cathedral_portfolio"
                     title="View the Portfolio gallery"
                 >
                     English Cathedrals
-        </a>
+        </NavLink>
             </h2>
             <div className="rightw">
                 <img src="/img/web/portfolio.jpg" alt="A view of a printed portfolio" />

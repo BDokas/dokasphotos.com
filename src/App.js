@@ -4,7 +4,7 @@ import $ from "jquery";
 
 import Home from "./components/Home";
 import Galleries from "./components/Galleries";
-import GalleryView from "./components/GalleryView";
+import Gallery from "./components/Gallery";
 import Techniques from "./components/Techniques";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
@@ -48,7 +48,7 @@ class App extends Component {
       for (var gallery of galleries) {
         
         render_galleries.push(
-          <Route path={"/galleries/" + gallery} component={GalleryView}/>
+          <Route path={"/galleries/" + gallery} component={Gallery}/>
         );
       }
     }

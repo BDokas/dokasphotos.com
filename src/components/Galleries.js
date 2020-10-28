@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import $ from "jquery";
 
 class Galleries extends Component {
@@ -57,24 +57,24 @@ class Galleries extends Component {
                 gallery_render.push(
                     <div className="imagewell">
                         <span>
-                            <Link
+                            <NavLink
                                 to={"/galleries/" + gallery}
                                 title={"View the photos in the " + gallery_name + " gallery"}
                             >
                                 {gallery_name}
-                            </Link>
+                            </NavLink>
                         </span>
                         <div className="dropshadow">
                             <div className="dropshadowBL">
                                 <div className="dropshadowTR">
-                                    <Link
+                                    <NavLink
                                         to={"/galleries/" + gallery}
                                         title={
                                             "View the photos in the " + gallery_name + " gallery"
                                         }
                                     >
                                         <img src={this.getImage(gallery)} alt={gallery} />
-                                    </Link>
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>
