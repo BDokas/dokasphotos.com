@@ -30,8 +30,7 @@ class Gallery extends Component {
 
     componentDidMount() {
         this.getPhotoData();
-        var gallery = this.props.location.pathname.substr(11);
-        this.setState({gallery : gallery})
+        this.setState({gallery : this.getGalleryName()})
     }
 
     getImage(name, gallery) {
@@ -46,8 +45,15 @@ class Gallery extends Component {
         return img;
     }
 
+    getGalleryName() {
+        var url = this.props.location.pathname.substr(11);
+        var slash = url.indexOf('/');
+        if (slash !== -1) url = url.substr(0, slash)
+        return url;
+    }
+
     render() {
-        var gallery = this.props.location.pathname.substr(11);
+        var gallery = this.getGalleryName();
         var gallery_name = gallery
             .replace(/[_-]/g, " ")
             .replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));
@@ -79,7 +85,9 @@ class Gallery extends Component {
                             </NavLink>
                             <Route
                                 path={"/galleries/" + gallery + "/" + photo.name}
-                                component={Photo}
+                                render={(props) => (
+                                    <Photo {...props} photos={photos} gallery={gallery}/>
+                                  )}
                             />
                         </div>
                     </div>
