@@ -30,6 +30,8 @@ class Gallery extends Component {
 
     componentDidMount() {
         this.getPhotoData();
+        var gallery = this.props.location.pathname.substr(11);
+        this.setState({gallery : gallery})
     }
 
     getImage(name, gallery) {
@@ -37,7 +39,7 @@ class Gallery extends Component {
         try {
             img = require("../img/" + gallery + "/" + name + "-thumb.jpg");
         } catch (err) {
-            // TODO replace this with something
+            // TODO replace this with something... better
             img = require("../img/front/IMG_4709.jpg");
         }
 

@@ -7,7 +7,7 @@ class Galleries extends Component {
         try {
             img = require("../img/" + gallery + "/front.jpg");
         } catch (err) {
-            // TODO replace this with something
+            // TODO replace this with something... better
             img = require("../img/front/IMG_4709.jpg");
         }
 
