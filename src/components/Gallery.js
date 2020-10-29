@@ -15,7 +15,7 @@ class Gallery extends Component {
     getPhotoData() {
         // Retrieve gallery information
         $.ajax({
-            url: "../photos.json",
+            url: process.env.PUBLIC_URL + "/photos.json",
             dataType: "json",
             cache: false,
             success: function (data) {
@@ -35,7 +35,7 @@ class Gallery extends Component {
     getImage(name, gallery) {
         var img = "";
         try {
-            img = require("../img/" + gallery + "/" + name);
+            img = require("../img/" + gallery + "/" + name + "-thumb.jpg");
         } catch (err) {
             // TODO replace this with something
             img = require("../img/front/IMG_4709.jpg");

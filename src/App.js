@@ -22,7 +22,7 @@ class App extends Component {
 
   getGalleryData() {
     $.ajax({
-      url: "../galleries.json",
+      url: process.env.PUBLIC_URL + "/galleries.json",
       dataType: "json",
       cache: false,
       success: function (data) {
@@ -46,13 +46,11 @@ class App extends Component {
       var galleries = this.state.galleries.names;
 
       for (var gallery of galleries) {
-        
         render_galleries.push(
-          <Route path={"/galleries/" + gallery} component={Gallery}/>
+          <Route path={"/galleries/" + gallery} component={Gallery} />
         );
       }
     }
-
 
     return (
       <BrowserRouter>
@@ -61,7 +59,12 @@ class App extends Component {
           <Switch>
             <Route path="/" component={Home} exact />
             {render_galleries}
-            <Route path="/galleries" component={Galleries} />
+            <Route
+              path="/galleries"
+              render={(props) => (
+                <Galleries {...props} gallery_names={galleries} />
+              )}
+            />
             <Route path="/biography" component={Biography} />
             <Route path="/techniques" component={Techniques} />
             <Route path="/pricing" component={Pricing} />

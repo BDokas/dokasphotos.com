@@ -1,35 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import $ from "jquery";
 
 class Galleries extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            galleries: {},
-        };
-    }
-
-    getGalleryData() {
-        // Retrieve gallery information
-        $.ajax({
-            url: "../galleries.json",
-            dataType: "json",
-            cache: false,
-            success: function (data) {
-                this.setState({ galleries: data });
-            }.bind(this),
-            error: function (xhr, status, err) {
-                console.log(err);
-                alert(err);
-            },
-        });
-    }
-
-    componentDidMount() {
-        this.getGalleryData();
-    }
-
     getImage(gallery) {
         var img = "";
         try {
@@ -45,10 +17,8 @@ class Galleries extends Component {
     render() {
         var gallery_render = [];
 
-        if (this.state.galleries.names) {
-            var galleries = this.state.galleries.names;
-
-            for (var gallery of galleries) {
+        if (this.props.gallery_names) {
+            for (var gallery of this.props.gallery_names) {
                 // Create a human-friendly name for each gallery
                 var gallery_name = gallery
                     .replace(/[_-]/g, " ")
