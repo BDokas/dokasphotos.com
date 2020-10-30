@@ -9,7 +9,7 @@ const home = () => {
                 <div className="dropshadow-big">
                     <div className="dropshadowBL">
                         <div className="dropshadowTR">
-                            <NavLink to="/galleries" title="View the galleries">
+                            <NavLink to="/galleries/great_britain/wells_-_retrochoir_and_lady_chapel" title="View the galleries">
                                 <img src={require("../img/front/IMG_4603.jpg")} alt="-" />
                             </NavLink>
                         </div>
@@ -19,9 +19,9 @@ const home = () => {
             <br className="spacer" />
             <h4>
                 &ldquo;Wells - Retrochoir and Lady Chapel&rdquo; &ndash;{" "}
-                <a href="/galleries/great_britain/wells_-_retrochoir_and_lady_chapel/">
+                <NavLink to="/galleries/great_britain/wells_-_retrochoir_and_lady_chapel">
                     View in the galleries
-        </a>
+                </NavLink>
             </h4>
         </div>
     );
