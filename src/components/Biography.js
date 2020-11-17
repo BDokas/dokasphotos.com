@@ -3,7 +3,7 @@ import React from "react";
 const biography = () => {
 	return (
 		<div className="biography">
-			<h1>Biography</h1>
+			<h2>Biography</h2>
 			<div className="rightw">
 				<img src={require("../img/web/biography.jpg")} alt="Dick Dokas" />
 			</div>

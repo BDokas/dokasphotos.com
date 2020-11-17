@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const Pricing = () => {
     return (
-        <div>
+        <div id="pricing" className="pricing">
+            <h2>Pricing</h2>
             <p>
                 All images are printed using glossy fiberbase silver gelatin double
                 weight paper and processed to the highest archival standards. The prints
@@ -19,7 +20,7 @@ const Pricing = () => {
         museum board. Frames are silver metal.{" "}
                 <NavLink to="/contact">Contact</NavLink> for details.
       </p>
-            <table>
+            <table className="pricing-table">
                 <tbody>
                     <tr>
                         <th colSpan="4">Normal Prints</th>
@@ -44,7 +45,7 @@ const Pricing = () => {
                     </tr>
                 </tbody>
             </table>
-            <table>
+            <table className="pricing-table">
                 <tbody>
                     <tr>
                         <th colSpan="4">Flower Prints</th>
@@ -83,7 +84,7 @@ const Pricing = () => {
         </NavLink>
             </h2>
             <div className="rightw">
-                <img src="/img/web/portfolio.jpg" alt="A view of a printed portfolio" />
+                <img src={require("../img/web/portfolio.jpg")} alt="A view of a printed portfolio" />
             </div>
             <p>
                 Only 30 will be made, signed and numbered. They are mounted on

@@ -12,11 +12,11 @@ class Contact extends React.Component {
 
    render() {
       return (
-         <div>
-            <h1>Contact Dick</h1>
+         <div className="contact">
+            <h2>Contact Dick</h2>
             <p>
                You can email me either via the form below or with your favorite email
-               application at
+               application at&nbsp;
           <a href="mailto:dick@dokasphotos.com">dick@dokasphotos.com</a>
             </p>
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)}>

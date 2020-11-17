@@ -3,18 +3,12 @@ import { NavLink } from "react-router-dom";
 
 const home = () => {
     return (
-        <div>
-            <h1>The Photography of Dick Dokas</h1>
+        <div className="home">
+            <h2>The Photography of Dick Dokas</h2>
             <div className="imagewell-big">
-                <div className="dropshadow-big">
-                    <div className="dropshadowBL">
-                        <div className="dropshadowTR">
-                            <NavLink to="/galleries/great_britain/wells_-_retrochoir_and_lady_chapel" title="View the galleries">
-                                <img src={require("../img/front/IMG_4603.jpg")} alt="-" />
-                            </NavLink>
-                        </div>
-                    </div>
-                </div>
+                <NavLink to="/galleries/great_britain/wells_-_retrochoir_and_lady_chapel" title="View the galleries">
+                    <img src={require("../img/front/IMG_4603.jpg")} alt="-" />
+                </NavLink>
             </div>
             <br className="spacer" />
             <h4>

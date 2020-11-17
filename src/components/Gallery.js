@@ -58,7 +58,7 @@ class Gallery extends Component {
             .replace(/[_-]/g, " ")
             .replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));
 
-        var photo_render = [<h1>{gallery_name + " Gallery"}</h1>];
+        var photo_render = [<h2>{gallery_name + " Gallery"}</h2>];
 
         var photos = this.state.photos[gallery];
         if (photos !== undefined) {
@@ -95,7 +95,7 @@ class Gallery extends Component {
             }
         }
 
-        return <div>{photo_render}</div>;
+        return <div className="gallery">{photo_render}</div>;
     }
 }
 

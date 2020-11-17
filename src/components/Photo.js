@@ -54,6 +54,14 @@ class Photo extends Component {
                     src={require("../img/" + this.props.gallery + "/" + img + ".jpg")}
                     alt={title}
                 />
+                <NavLink to={{
+                    pathname:"/purchase",
+                    state: {
+                        title: title,
+                        img: img,
+                        gallery: this.props.gallery
+                    }
+                    }}>Order this Print</NavLink>
             </div>
         );
     }

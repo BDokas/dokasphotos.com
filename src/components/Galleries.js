@@ -54,9 +54,11 @@ class Galleries extends Component {
         }
 
         return (
-            <div>
-                <h1>Galleries</h1>
-                {gallery_render}
+            <div className="galleries">
+                <h2>Galleries</h2>
+                <div className="gallery-container">
+                    {gallery_render}
+                </div>
             </div>
         );
     }
