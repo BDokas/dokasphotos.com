@@ -146,6 +146,23 @@ header {
     display: grid;
 }
 
+form, fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+form { margin-top: 30px }
+input { margin-bottom: 15px }
+input.button { padding: 0 20px }
+label { font-weight: bold }
+select { height: 16px }
+textarea {
+	height: 175px;
+	margin: 0 0 15px 0;
+	padding: 0;
+	width: 380px;
+}
+
 h2 {
   font-size: 30px;
   font-style: italic;
@@ -188,19 +205,16 @@ footer {
 
 
 
-.biography p, .legal p, .techniques p, .pricing p, .techniques ul{
+.biography p, .legal p, .techniques p, .pricing p, .techniques ul, .contact form, .contact p{
     text-align: justify;
 }
 
 .popup {
     position:absolute;
-    top: 50%;
-    left: 50%;
+    top: 100px;
 
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    margin-left:auto;
+    margin-right: auto;
 
     padding: 30px;
     width: 900px;
@@ -247,6 +261,12 @@ footer {
   filter: blur(5px);  
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);  
+
+  -webkit-animation: fadein .7s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein .7s; /* Firefox < 16 */
+  -ms-animation: fadein .7s; /* Internet Explorer */
+  -o-animation: fadein .7s; /* Opera < 12.1 */
+  animation: fadein .7s;
 }
 
 

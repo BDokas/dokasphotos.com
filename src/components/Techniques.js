@@ -24,7 +24,7 @@ class Techniques extends Component {
                   An 8"&times;10", silver bromide and unsharp masks.
         </li>
                <li>
-                  <NavLink to="/techniques/making_prints/details">
+                  <NavLink to="/techniques/making_prints_details">
                      On Making Prints - Technical Details
           </NavLink>
                </li>
@@ -58,7 +58,7 @@ class Techniques extends Component {
             <Route path="/techniques/flower_prints" component={Flower_Prints} />
             <Route path="/techniques/making_prints" component={Making_Prints} />
             <Route
-               path="/techniques/making_prints/details"
+               path="/techniques/making_prints_details"
                component={Making_Prints_Details}
             />
             <Route path="/techniques/cameras" component={Camera} />
@@ -205,7 +205,7 @@ class Making_Prints extends Component {
       </p>
             <p>
                If you would like more detail on the process, I encourage you to read{" "}
-               <NavLink to="/techniques/making_prints/details">
+               <NavLink to="/techniques/making_prints_details">
                   a more technical overview
         </NavLink>{" "}
         of the processes I use.
