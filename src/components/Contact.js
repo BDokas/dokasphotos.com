@@ -21,7 +21,7 @@ class Contact extends React.Component {
             </p>
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)}>
                <div className="form-group">
-                  <label htmlFor="name">Name</label>
+                  <p><label htmlFor="name">Name:</label></p>
                   <input
                      type="text"
                      className="form-control"
@@ -31,7 +31,7 @@ class Contact extends React.Component {
                   />
                </div>
                <div className="form-group">
-                  <label htmlFor="inputEmail">Email address</label>
+                  <p><label htmlFor="inputEmail">Email address:</label></p>
                   <input
                      type="text"
                      className="form-control"
@@ -41,7 +41,7 @@ class Contact extends React.Component {
                   />
                </div>
                <div className="form-group">
-                  <label htmlFor="message">Message</label>
+                  <p><label htmlFor="message">Message:</label></p>
                   <textarea
                      className="form-control"
                      rows="5"

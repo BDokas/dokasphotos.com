@@ -32,7 +32,7 @@ class Photo extends Component {
                 <NavLink
                     to={"/galleries/" + this.props.gallery + "/" + prev_photo.name}
                 >
-                    Last
+                    &larr; Prev
                 </NavLink>
             );
         }
@@ -42,26 +42,36 @@ class Photo extends Component {
                 <NavLink
                     to={"/galleries/" + this.props.gallery + "/" + next_photo.name}
                 >
-                    Next
+                    Next &rarr;
                 </NavLink>
             );
         }
         return (
-            <div>
-                {prev_button}
-                {next_button}
-                <img
-                    src={require("../img/" + this.props.gallery + "/" + img + ".jpg")}
-                    alt={title}
-                />
-                <NavLink to={{
-                    pathname:"/purchase",
-                    state: {
-                        title: title,
-                        img: img,
-                        gallery: this.props.gallery
-                    }
-                    }}>Order this Print</NavLink>
+            <div className="hidden">
+                <NavLink to={"/galleries/" + this.props.gallery}>
+                    <div className="bg-blur" />
+                    <div className="close-button">
+                        <img src={require("../img/css_elements/x.png")} alt="X" />
+                    </div>
+                </NavLink>
+                <div className="popup">
+                    <p>{prev_button}
+                        {next_button}
+                    </p>
+                    <img
+                        src={require("../img/" + this.props.gallery + "/" + img + ".jpg")}
+                        alt={title}
+                    /><p>
+                        <NavLink to={{
+                            pathname: "/purchase",
+                            state: {
+                                title: title,
+                                img: img,
+                                gallery: this.props.gallery
+                            }
+                        }}>Order this Print</NavLink>
+                    </p>
+                </div>
             </div>
         );
     }

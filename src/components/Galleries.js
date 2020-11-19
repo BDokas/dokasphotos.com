@@ -8,7 +8,7 @@ class Galleries extends Component {
             img = require("../img/" + gallery + "/front.jpg");
         } catch (err) {
             // TODO replace this with something... better
-            img = require("../img/front/IMG_4709.jpg");
+            img = require("../img/michigan_ohio/IMG_4709-thumb.jpg");
         }
 
         return img;
@@ -26,28 +26,22 @@ class Galleries extends Component {
 
                 gallery_render.push(
                     <div className="imagewell">
-                        <span>
+                        <div className="image-title">
                             <NavLink
                                 to={"/galleries/" + gallery}
                                 title={"View the photos in the " + gallery_name + " gallery"}
                             >
                                 {gallery_name}
                             </NavLink>
-                        </span>
-                        <div className="dropshadow">
-                            <div className="dropshadowBL">
-                                <div className="dropshadowTR">
-                                    <NavLink
-                                        to={"/galleries/" + gallery}
-                                        title={
-                                            "View the photos in the " + gallery_name + " gallery"
-                                        }
-                                    >
-                                        <img src={this.getImage(gallery)} alt={gallery} />
-                                    </NavLink>
-                                </div>
-                            </div>
                         </div>
+                        <NavLink
+                            to={"/galleries/" + gallery}
+                            title={
+                                "View the photos in the " + gallery_name + " gallery"
+                            }
+                        >
+                            <img src={this.getImage(gallery)} alt={gallery} />
+                        </NavLink>
                     </div>
                 );
             }

@@ -30,7 +30,7 @@ class Gallery extends Component {
 
     componentDidMount() {
         this.getPhotoData();
-        this.setState({gallery : this.getGalleryName()})
+        this.setState({ gallery: this.getGalleryName() })
     }
 
     getImage(name, gallery) {
@@ -58,44 +58,48 @@ class Gallery extends Component {
             .replace(/[_-]/g, " ")
             .replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));
 
-        var photo_render = [<h2>{gallery_name + " Gallery"}</h2>];
+        var photo_render = [];
+
 
         var photos = this.state.photos[gallery];
         if (photos !== undefined) {
             for (var photo of photos) {
                 photo_render.push(
-                    <div>
-                        <span>
+                    <div className="imagewell">
+                        <div className="image-title">
                             <NavLink
                                 to={"/galleries/" + gallery + "/" + photo.name}
                                 title={"View " + photo.title}
                             >
                                 {photo.title}
                             </NavLink>
-                        </span>
-                        <div className="imagewell-nocaption">
-                            <NavLink
-                                to={"/galleries/" + gallery + "/" + photo.name}
-                                title={"View " + photo.title}
-                            >
-                                <img
-                                    src={this.getImage(photo.img, gallery)}
-                                    alt={photo.title}
-                                />
-                            </NavLink>
-                            <Route
-                                path={"/galleries/" + gallery + "/" + photo.name}
-                                render={(props) => (
-                                    <Photo {...props} photos={photos} gallery={gallery}/>
-                                  )}
-                            />
                         </div>
+                        <NavLink
+                            to={"/galleries/" + gallery + "/" + photo.name}
+                            title={"View " + photo.title}
+                        >
+                            <img
+                                src={this.getImage(photo.img, gallery)}
+                                alt={photo.title}
+                            />
+                        </NavLink>
+                        <Route
+                            path={"/galleries/" + gallery + "/" + photo.name}
+                            render={(props) => (
+                                <Photo {...props} photos={photos} gallery={gallery} />
+                            )}
+                        />
                     </div>
                 );
             }
         }
 
-        return <div className="gallery">{photo_render}</div>;
+        return <div className="gallery">
+            <h2>{gallery_name + " Gallery"}</h2>
+            <div className="gallery-container">
+                {photo_render}
+            </div>
+        </div>;
     }
 }
 
