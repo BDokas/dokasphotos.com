@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink, Route } from "react-router-dom";
-import $ from "jquery";
+import Navigation from "./Navigation";
 
 import Photo from "./Photo";
 
@@ -8,40 +8,31 @@ class Gallery extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            photos: [],
+            isLoaded: false,
+            photos: {},
         };
     }
 
-    getPhotoData() {
-        // Retrieve gallery information
-        $.ajax({
-            url: process.env.PUBLIC_URL + "/photos.json",
-            dataType: "json",
-            cache: false,
-            success: function (data) {
-                this.setState({ photos: data });
-            }.bind(this),
-            error: function (xhr, status, err) {
-                console.log(err);
-                alert(err);
-            },
-        });
-    }
-
     componentDidMount() {
-        this.getPhotoData();
-        this.setState({ gallery: this.getGalleryName() })
+        fetch('http://15.222.77.108:8000/api/' + this.getGalleryName())
+            .then(response => response.json())
+            .then((jsonData) => {
+                this.setState({ photos: jsonData })
+                this.setState({ isLoaded: true })
+            })
+            .catch((error) => {
+                console.error(error);
+            })
     }
 
     getImage(name, gallery) {
         var img = "";
         try {
-            img = require("../img/" + gallery + "/" + name + "-thumb.jpg");
+            img = this.state.photos[name].url
         } catch (err) {
             // TODO replace this with something... better
-            img = require("../img/front/IMG_4709.jpg");
+            img = "data:,";
         }
-
         return img;
     }
 
@@ -52,6 +43,24 @@ class Gallery extends Component {
         return url;
     }
 
+    addToCart() {
+        var storedPhotos = JSON.parse(localStorage.getItem('photos'))
+        if (storedPhotos == null) {
+            storedPhotos = []
+        }
+        for (var key of Object.keys(this.state.photos)) {
+            console.log(this.state.photos[key])
+            storedPhotos.push(this.state.photos[key])     
+        }
+        localStorage.setItem('photos', JSON.stringify(storedPhotos))
+        document.getElementById('addToCart').innerHTML = 'Added to Cart!'
+        document.getElementById('goToCart').innerHTML = 'Go To Cart'
+        console.log("Stored Photos: ", storedPhotos)
+        console.log("Gallery Photos", this.state.photos)
+        document.getElementById('cartButton').innerHTML = 'Cart (' + storedPhotos.length +')'
+        
+    }
+
     render() {
         var gallery = this.getGalleryName();
         var gallery_name = gallery
@@ -60,38 +69,40 @@ class Gallery extends Component {
 
         var photo_render = [];
 
-
-        var photos = this.state.photos[gallery];
-        if (photos !== undefined) {
-            for (var photo of photos) {
+        if (this.state.isLoaded) {
+            for (var photo of Object.keys(this.state.photos)) {
+                var photo_name = photo
+                    .replace(/[_-]/g, " ")
+                    .replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));
                 photo_render.push(
                     <div className="imagewell">
                         <div className="image-title">
                             <NavLink
-                                to={"/galleries/" + gallery + "/" + photo.name}
-                                title={"View " + photo.title}
+                                to={"/galleries/" + gallery + "/" + photo}
+                                title={"View " + photo_name}
                             >
-                                {photo.title}
+                                {photo_name}
                             </NavLink>
                         </div>
                         <NavLink
-                            to={"/galleries/" + gallery + "/" + photo.name}
-                            title={"View " + photo.title}
+                            to={"/galleries/" + gallery + "/" + photo}
+                            title={"View " + photo_name}
                         >
                             <img
-                                src={this.getImage(photo.img, gallery)}
-                                alt={photo.title}
+                                src={this.getImage(photo, gallery)}
+                                alt={photo}
                             />
                         </NavLink>
                         <Route
-                            path={"/galleries/" + gallery + "/" + photo.name}
+                            path={"/galleries/" + gallery + "/" + photo}
                             render={(props) => (
-                                <Photo {...props} photos={photos} gallery={gallery} />
+                                <Photo {...props} photos={this.state.photos} gallery={gallery} />
                             )}
                         />
                     </div>
                 );
             }
+
         }
 
         return <div className="gallery">
@@ -99,6 +110,10 @@ class Gallery extends Component {
             <div className="gallery-container">
                 {photo_render}
             </div>
+            <p><a href='#/' id='addToCart' onClick={() => this.addToCart()}>Add Entire Gallery to Cart</a></p>
+            <p><NavLink id='goToCart' to={{
+                            pathname: "/cart",
+                        }}></NavLink></p>
         </div>;
     }
 }

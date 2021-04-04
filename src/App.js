@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter, NavLink, Route, Switch } from "react-router-dom";
-import $ from "jquery";
 
 import "./css/master.css";
 
@@ -13,43 +12,35 @@ import Error from "./components/Error";
 import Navigation from "./components/Navigation";
 import Biography from "./components/Biography";
 import Pricing from "./components/Pricing";
-import Purchase from "./components/Purchase";
+import Cart from "./components/Cart";
 import Legal from "./components/Legal";
+import Checkout from "./components/Checkout"
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      isLoaded: false,
       galleries: {},
     };
   }
 
-  getGalleryData() {
-    $.ajax({
-      url: process.env.PUBLIC_URL + "/galleries.json",
-      dataType: "json",
-      cache: false,
-      success: function (data) {
-        this.setState({ galleries: data });
-      }.bind(this),
-      error: function (xhr, status, err) {
-        console.log(err);
-        alert(err);
-      },
-    });
-  }
-
   componentDidMount() {
-    this.getGalleryData();
+    fetch('http://15.222.77.108:8000/api/galleries')
+       .then(response => response.json())
+       .then((jsonData) => {
+         this.setState({galleries: jsonData})
+         this.setState({isLoaded: true})
+       })
+       .catch((error) =>  {
+         console.error(error);
+       })
   }
 
   render() {
     var render_galleries = [];
-
-    if (this.state.galleries.names) {
-      var galleries = this.state.galleries.names;
-
-      for (var gallery of galleries) {
+    if (this.state.isLoaded) {
+      for (var gallery of Object.keys(this.state.galleries)) {
         render_galleries.push(
           <Route path={"/galleries/" + gallery} component={Gallery} />
         );
@@ -69,26 +60,27 @@ class App extends Component {
             </NavLink>
           </header>
           <div id="content-wrapper">
-          <div id="content">
-            <Navigation />
-            <Switch>
-              <Route path="/" component={Home} exact />
-              {render_galleries}
-              <Route
-                path="/galleries"
-                render={(props) => (
-                  <Galleries {...props} gallery_names={galleries} />
-                )}
-              />
-              <Route path="/biography" component={Biography} />
-              <Route path="/techniques" component={Techniques} />
-              <Route path="/pricing" component={Pricing} />
-              <Route path="/purchase" component={Purchase} />
-              <Route path="/legal" component={Legal} />
-              <Route path="/contact" component={Contact} />
-              <Route component={Error} />
-            </Switch>
-          </div>
+            <div id="content">
+              <Navigation />
+              <Switch>
+                <Route path="/" component={Home} exact />
+                {render_galleries}
+                <Route
+                  path="/galleries"
+                  render={(props) => (
+                    <Galleries {...props} galleries={this.state.galleries} />
+                  )}
+                />
+                <Route path="/biography" component={Biography} />
+                <Route path="/techniques" component={Techniques} />
+                <Route path="/pricing" component={Pricing} />
+                <Route path="/cart" component={Cart} />
+                <Route path="/legal" component={Legal} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/checkout" component={Checkout} />
+                <Route component={Error} />
+              </Switch>
+            </div>
           </div>
         </div>
         <footer>
