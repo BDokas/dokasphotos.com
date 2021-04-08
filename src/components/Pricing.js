@@ -77,7 +77,7 @@ const Pricing = () => {
             <h2>
                 Limited Edition Portfolio &ndash;{" "}
                 <NavLink
-                    to="/galleries/cathedral_portfolio"
+                    to="/galleries/Cathedral Portfolio"
                     title="View the Portfolio gallery"
                 >
                     English Cathedrals

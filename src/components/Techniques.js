@@ -83,35 +83,37 @@ class Flower_Prints extends Component {
                      src={require("../img/web/flower_print.jpg")}
                      alt="Painting red clay on the negative"
                   />
-        Painting the background of a flower negative with red clay on a four
-        bristle brush to block all light. This retains the very bright
-        background.
-      </div>
-               <p>
-                  I used to draw a lot and I wanted an image that had the same feeling as
-                  a drawing so I have combined a number of techniques to arrive at that
-                  feeling. First I chose a silver chloride emulsion paper rather than the
-                  more ubiquitous silver bromide because the resulting image would be
-                  softer. I have used filters to subtract the color of the flower
-                  rendering the flower white.
+                  <p>Painting the background of a flower negative with red clay on a four
+                  bristle brush to block all light. This retains the very bright
+        background.</p>
+
+               </div>
+               <div className="technique-1">
+                  <p>
+                     I used to draw a lot and I wanted an image that had the same feeling as
+                     a drawing so I have combined a number of techniques to arrive at that
+                     feeling. First I chose a silver chloride emulsion paper rather than the
+                     more ubiquitous silver bromide because the resulting image would be
+                     softer. I have used filters to subtract the color of the flower
+                     rendering the flower white.
       </p>
-               <p>
-                  After this, I hand painted out the background on the negative using a
-                  four-bristle brush a process that takes awhile! The result is a white
-                  flower on a white background which is rather flat in appearance so next
-                  I split toned the paper to give a three dimensional effect to it. Toning
-                  normally changes the color of the entire image but because of the
-                  emulsion that I am using this color change can be stopped at any time. I
-                  stop this process when just the darker parts change to a reddish brown
-                  leaving the lightest parts silver hence the name split toned.
+
+                  <p>
+                     After this, I hand painted out the background on the negative using a
+                     four-bristle brush a process that takes awhile! The result is a white
+                     flower on a white background which is rather flat in appearance so next
+                     I split toned the paper to give a three dimensional effect to it. Toning
+                     normally changes the color of the entire image but because of the
+                     emulsion that I am using this color change can be stopped at any time. I
+                     stop this process when just the darker parts change to a reddish brown
+                     leaving the lightest parts silver hence the name split toned.
       </p>
-               <p>
-                  <NavLink to="/galleries/flowers_on_white" title="View the Flowers gallery">
-                     View the Flowers gallery
+                  <p>
+                     <NavLink to="/galleries/Flowers on White" title="View the Flowers gallery">
+                        View the Flowers gallery
             </NavLink>
         .
-      </p>
-               <div className="spacer" />
+      </p></div>
             </div>
          </div>
       );
@@ -134,24 +136,24 @@ class Camera extends Component {
                      alt='My Deardorff 8"&times;10" camera'
                   />
                </div>
-               <p>
-                  I use two cameras. The first of these is a Deardorff to photograph the
-                  flowers because it is more capable of making extensive adjustments
-                  necessary for close-ups. The lens is a 180mm f5.6 Schneider macro called
-                  a Makro–Symmar designed for extreme close-ups.
-      </p>
-               <br className="spacer" />
+               <div className='technique-1'>
+                  <p>
+                     I use two cameras. The first of these is a Deardorff to photograph the
+                     flowers because it is more capable of making extensive adjustments
+                     necessary for close-ups. The lens is a 180mm f5.6 Schneider macro called
+                     a Makro–Symmar designed for extreme close-ups.
+      </p></div>
                <div className="right">
                   <img
                      src={require("../img/web/ikeda.jpg")}
                      alt='My Deardorff 8"&times;10" camera'
                   />
                </div>
-               <p>
-                  My field camera is an Ikeda, which is extremely compact and lightweight.
-                  It has been my companion for thirty years now!
-      </p>
-               <br className="spacer" />
+               <div className="technique-2">
+                  <p>
+                     My field camera is an Ikeda, which is extremely compact and lightweight.
+                     It has been my companion for thirty years now!
+      </p></div>
             </div>
          </div>
       );
@@ -168,48 +170,50 @@ class Making_Prints extends Component {
                <img src={require("../img/css_elements/x.png")} alt="X" onClick={() => { handleClick(this) }} />
             </div>
             <div className="popup">
-               <p>
-                  Normally photographs are made by placing a small negative in an enlarger
-                  in order to make a picture large enough for people to see. The problem
-                  with this method is that the closer you view the image, the fuzzier it
-                  becomes.
+               <div className="technique-0">
+                  <p>
+                     Normally photographs are made by placing a small negative in an enlarger
+                     in order to make a picture large enough for people to see. The problem
+                     with this method is that the closer you view the image, the fuzzier it
+                     becomes.
       </p>
-               <p>
-                  What you see is a silver print made from an 8"&times;10" negative rather
-                  than from a much smaller negative. The value of using such a large
-                  negative is apparent the closer you view the image. Instead of getting
-                  fuzzier the image now keeps getting clearer. The reason lies in the fact
-                  that the larger the negative, the more information that can be stored on
-                  it.
+                  <p>
+                     What you see is a silver print made from an 8"&times;10" negative rather
+                     than from a much smaller negative. The value of using such a large
+                     negative is apparent the closer you view the image. Instead of getting
+                     fuzzier the image now keeps getting clearer. The reason lies in the fact
+                     that the larger the negative, the more information that can be stored on
+                     it.
       </p>
-               <p>
-                  To make such a large negative requires a large camera. I use an{" "}
-                  <NavLink to="/techniques/cameras">
-                     8"&times;10" large format field camera
+                  <p>
+                     To make such a large negative requires a large camera. I use an{" "}
+                     <NavLink to="/techniques/cameras">
+                        8"&times;10" large format field camera
         </NavLink>
         , the type used around the turn of the century. It is made of wood with
         a large leather bellows. To focus, you get under a black cloth and view
         the image upside down on an etched glass plate at the back of the
         camera.
       </p>
-               <p>
-                  Instead of using single negatives in printing, I make unsharp masks. An
-                  unsharp mask is an 8"&times;10" sheet of film which are pin registered
-                  to the negative. On top of that sandwich of film, using frosted drafting
-                  film; I make additional burning and dodging masks. These are made by
-                  drawing on the film to hold back light in some areas while cutting holes
-                  in the film to allow light in others to pass. This results in much
-                  precision when making burns and dodges. Detail is what interests me.
-                  Printing through a sandwich of both negative and positive film results
-                  in increased sharpness and expanded tonal range.
+                  <p>
+                     Instead of using single negatives in printing, I make unsharp masks. An
+                     unsharp mask is an 8"&times;10" sheet of film which are pin registered
+                     to the negative. On top of that sandwich of film, using frosted drafting
+                     film; I make additional burning and dodging masks. These are made by
+                     drawing on the film to hold back light in some areas while cutting holes
+                     in the film to allow light in others to pass. This results in much
+                     precision when making burns and dodges. Detail is what interests me.
+                     Printing through a sandwich of both negative and positive film results
+                     in increased sharpness and expanded tonal range.
       </p>
-               <p>
-                  If you would like more detail on the process, I encourage you to read{" "}
-                  <NavLink to="/techniques/making_prints/details">
-                     a more technical overview
+                  <p>
+                     If you would like more detail on the process, I encourage you to read{" "}
+                     <NavLink to="/techniques/making_prints/details">
+                        a more technical overview
         </NavLink>{" "}
         of the processes I use.
       </p>
+               </div>
             </div>
          </div>
       );
@@ -225,118 +229,125 @@ class Making_Prints_Details extends Component {
                <img src={require("../img/css_elements/x.png")} alt="X" onClick={() => { handleClick(this) }} />
             </div>
             <div className="popup">
-               <p>
-                  When making prints, I usually incorporate a number of techniques beyond
-                  the use of a single negative.
+               <div className="technique-1">
+                  <p>
+                     When making prints, I usually incorporate a number of techniques beyond
+                     the use of a single negative.
+                  </p>
+
+                  <h3>Unsharp Masking</h3>
+
+
+                  <p>
+                     An unsharp mask accomplishes two tasks: it has the visual effect that
+                     you have flooded the scene with light by increasing local contrast
+                     throughout the contrast range. Second there is a pronounced increase in
+                     sharpness. In comparison, even a contact print looks fuzzy!
       </p>
-               <h3>Unsharp Masking</h3>
-               <p>
-                  An unsharp mask accomplishes two tasks: it has the visual effect that
-                  you have flooded the scene with light by increasing local contrast
-                  throughout the contrast range. Second there is a pronounced increase in
-                  sharpness. In comparison, even a contact print looks fuzzy!
-      </p>
+                  <p>
+                     This is made in complete darkness. I start by placing the negative on
+                     top of a new sheet of film; both have two precision holes punched at the
+                     edge of the sheets of film. The emulsions are facing the same direction
+                     so that the image falling on the new sheet will be slightly larger and a
+                     bit out of focus which is why it is called an unsharp mask. Now using
+                     the enlarger as a light source, I send light onto this new film. After
+                     development, I have a thin positive. Both can now be assembled into a
+                     &ldquo;sandwich&rdquo; by lining up the holes for perfect registration.
+      </p></div>
                <div className="right">
-                  <img
+                  <img className="img-1"
                      src={require("../img/web/pin_registration.jpg")}
                      alt="My pin registration device"
                   />
-        A pin registration device is used to make two precision holes on the
-        very edge of both the negative and positive unsharp mask.
-      </div>
-               <p>
-                  This is made in complete darkness. I start by placing the negative on
-                  top of a new sheet of film; both have two precision holes punched at the
-                  edge of the sheets of film. The emulsions are facing the same direction
-                  so that the image falling on the new sheet will be slightly larger and a
-                  bit out of focus which is why it is called an unsharp mask. Now using
-                  the enlarger as a light source, I send light onto this new film. After
-                  development, I have a thin positive. Both can now be assembled into a
-                  &ldquo;sandwich&rdquo; by lining up the holes for perfect registration.
-      </p>
-               <h3>Dodging Mask</h3>
-               <p>
-                  A dodging mask is both a precise and repeatable way to lighten areas
-                  within an image. The usual way of doing this is to jiggle an object in
-                  the light path while printing. However, that is, at best, a rather crude
-                  method.
-      </p>
+                  <p>A pin registration device is used to make two precision holes on the
+        very edge of both the negative and positive unsharp mask.</p>
+               </div>
+
+
+               <div className='technique-2'>
+                  <h3>Dodging Mask</h3>
+                  <p>
+                     A dodging mask is both a precise and repeatable way to lighten areas
+                     within an image. The usual way of doing this is to jiggle an object in
+                     the light path while printing. However, that is, at best, a rather crude
+                     method.
+                  </p>
+                  <p>
+                     A plastic double-sided frosted drafting sheet is placed over the
+                     sandwich of negative and unsharp mask. The illumination from the light
+                     box clearly shows areas that need to be dodged. This is accomplished by
+                     adding density using pencils. A precision dodging mask is the result.
+                     Areas to be burned are outlined to indicate where cutouts are to be made
+                     allowing more light to pass and creating a burning mask.
+               </p>
+               </div>
                <div className="left">
-                  <img
+                  <img className="img-2"
                      src={require("../img/web/dodging_mask.jpg")}
                      alt="Drawing a dodging mask"
                   />
                </div>
-               <p>
-                  A plastic double-sided frosted drafting sheet is placed over the
-                  sandwich of negative and unsharp mask. The illumination from the light
-                  box clearly shows areas that need to be dodged. This is accomplished by
-                  adding density using pencils. A precision dodging mask is the result.
-                  Areas to be burned are outlined to indicate where cutouts are to be made
-                  allowing more light to pass and creating a burning mask.
-      </p>
-               <h3>Burning Mask</h3>
+               <div className='technique-3'>
+                  <h3>Burning Mask</h3>
+                  <p>
+                     A burning mask can be made by cutting holes in the same frosted plastic
+                     used to make the dodging mask. This replaces the older technique of
+                     using a card with a hole cut into it. The latter is more imprecise so
+                     that light often spills over onto adjacent areas creating unwanted
+                     effects.
+                  </p>
+                  <p>
+                     Cutting the plastic double sided drafting sheet to make the precision
+                     burns. The sheet already contains the precision dodges made by adding
+                     density to the frosted plastic.
+                  </p></div>
                <div className="right">
                   <img
                      src={require("../img/web/burning_mask.jpg")}
                      alt="Cutting out a burning mask"
                   />
                </div>
-               <p>
-                  A burning mask can be made by cutting holes in the same frosted plastic
-                  used to make the dodging mask. This replaces the older technique of
-                  using a card with a hole cut into it. The latter is more imprecise so
-                  that light often spills over onto adjacent areas creating unwanted
-                  effects.
-      </p>
-               <p>
-                  Cutting the plastic double sided drafting sheet to make the precision
-                  burns. The sheet already contains the precision dodges made by adding
-                  density to the frosted plastic.
-      </p>
-               <h3>Assembly</h3>
-               <p>
-                  To assemble all the above to print a picture think of the printing
-                  process as painting with light. What I have done so far with the use of
-                  the different masks is to much more precisely control the light that
-                  lands on the photographic paper.
-      </p>
-               <div className="left">
+               <div className="technique-4">
+                  <h3>Assembly</h3>
+                  <p>
+                     To assemble all the above to print a picture think of the printing
+                     process as painting with light. What I have done so far with the use of
+                     the different masks is to much more precisely control the light that
+                     lands on the photographic paper.
+      </p></div>
+               <div className="assembly-1">
                   <img
                      src={require("../img/web/negative_carrier.jpg")}
                      alt="A view of negative carrier"
                   />
-               </div>
-               <p>
-                  Here we have the negative carrier with the sandwich of negative and
-                  unsharp mask over a sheet of anti-Newton glass.
-      </p>
-               <br className="spacer" />
-               <div className="right">
+
+                  <p>
+                     Here we have the negative carrier with the sandwich of negative and
+                     unsharp mask over a sheet of anti-Newton glass.
+      </p></div>
+               <div className="assembly-2">
                   <img
                      src={require("../img/web/diffusion_plastic.jpg")}
                      alt="The carrier with diffusion plastic added"
                   />
-               </div>
-               <p>
-                  A <sup>1</sup>/<sub>8</sub>" frosted diffusion plastic is placed over
+
+                  <p>
+                     A <sup>1</sup>/<sub>8</sub>" frosted diffusion plastic is placed over
         the sandwich of negative and unsharp mask. Next, the dodging/burning
         mask will be taped on top. The light box will ensure correct
         registration before taping it in place.
-      </p>
-               <br className="spacer" />
-               <div className="left">
+      </p></div>
+               <div className="assembly-3">
                   <img
                      src={require("../img/web/assembly.jpg")}
                      alt="The final assembly"
                   />
-               </div>
-               <p>
-                  A sheet of <sup>1</sup>/<sub>8</sub>" frosted diffusion plastic is place
+
+                  <p>
+                     A sheet of <sup>1</sup>/<sub>8</sub>" frosted diffusion plastic is place
         over the sandwich of negative and unsharp mask, the dodging/burning mask
         is now taped on top.
-      </p>
-               <div className="spacer" />
+      </p></div>
             </div>
          </div>
       );
@@ -353,83 +364,92 @@ class Enlarger extends Component {
                <img src={require("../img/css_elements/x.png")} alt="X" onClick={() => { handleClick(this) }} />
             </div>
             <div className="popup">
-               <p>
-                  The enlarger that I use is one that I have built using a few items that
-                  I salvaged from an Elwood enlarger - mainly just the rack and pinion
-                  mechanism. The black box is made of wood and contains the filter drawer
-                  and negative carrier. Seated on the top is an aluminum box housing a
-                  homemade 12"&times;12" coldhead lamp.
+               <div className="technique-0">
+                  <p>
+                     The enlarger that I use is one that I have built using a few items that
+                     I salvaged from an Elwood enlarger - mainly just the rack and pinion
+                     mechanism. The black box is made of wood and contains the filter drawer
+                     and negative carrier. Seated on the top is an aluminum box housing a
+                     homemade 12"&times;12" coldhead lamp.
       </p>
-               <p>
-                  Here are the views of my enlarger head as well as a description for each
-                  picture.
-      </p>
-               <h3>Left Side</h3>
+                  <p>
+                     Here are the views of my enlarger head as well as a description for each
+                     picture.
+      </p></div>
+               <div className="technique-2">
+                  <h3>Left Side</h3>
+                  <p>
+                     The bottom board of the black box is U-shaped with the negative
+                     carrier&rsquo;s end protruding. You can see my large relay mounted to a
+                     floor joist. The two vertical over exposed strips are meter sticks used
+                     to record the height settings for both the bellows and column for each
+                     print.
+      </p></div>
                <div className="right">
                   <img
                      src={require("../img/web/enlarger_left.jpg")}
                      alt="The left side of the enlarger"
                   />
                </div>
-               <p>
-                  The bottom board of the black box is U-shaped with the negative
-                  carrier&rsquo;s end protruding. You can see my large relay mounted to a
-                  floor joist. The two vertical over exposed strips are meter sticks used
-                  to record the height settings for both the bellows and column for each
-                  print.
-      </p>
-               <h3>Right Side</h3>
+
+               <div className="technique-3">
+                  <h3>Right Side</h3>
+                  <p>
+                     The filter drawer is closed and you can see how the filter door is
+                     constructed.
+      </p></div>
                <div className="left">
                   <img
                      src={require("../img/web/enlarger_right.jpg")}
                      alt="The right side of the enlarger"
                   />
                </div>
-               <p>
-                  The filter drawer is closed and you can see how the filter door is
-                  constructed.
-      </p>
-               <h3>Front &amp; Door Open</h3>
+
+               <div className="technique-5">
+                  <h3>Front &amp; Door Open</h3>
+
+                  <p>
+                     The front filter drawer is open and you can see the felt attached to the
+                     inside of the door used as a light trap and cushion when the door is
+                     closed. The center cutout in the front filter opening is so I can easily
+                     get my remaining fingers in there to remove the 300mm&times;300mm
+                     filter. You can see the bottom of my light is about <sup>3</sup>/
+                     <sub>4</sub> inch above the filter and well down into the wooden box
+                     which has black weather stripping on it&rsquo;s inside to trap light and
+                     make it very easy to remove the light head . You can&rsquo;t see it but
+                     there is a channel in the sides of the box where the filter slides in. I
+                     made these by simply running the saw blade into the wooden sides boards
+                     about <sup>1</sup>/<sub>8</sub> of an inch. I went to a hobby shop and
+                     purchased some piano wire. A single wire was taped to the back of each
+                     filter which keeps the filter from sagging as you side it into place.
+                     The two white strips that you see at both sides of the opening are glow
+                     in the dark strips of tape which make it a snap to find the channels to
+                     put the filter in when you are changing filters in the dark.
+                  </p></div>
                <div className="rightw">
                   <img
                      src={require("../img/web/enlarger_front.jpg")}
                      alt="The front side of the enlarger"
                   />
                </div>
-               <p>
-                  The front filter drawer is open and you can see the felt attached to the
-                  inside of the door used as a light trap and cushion when the door is
-                  closed. The center cutout in the front filter opening is so I can easily
-                  get my remaining fingers in there to remove the 300mm&times;300mm
-        filter. You can see the bottom of my light is about <sup>3</sup>/
-        <sub>4</sub> inch above the filter and well down into the wooden box
-        which has black weather stripping on it&rsquo;s inside to trap light and
-        make it very easy to remove the light head . You can&rsquo;t see it but
-        there is a channel in the sides of the box where the filter slides in. I
-        made these by simply running the saw blade into the wooden sides boards
-        about <sup>1</sup>/<sub>8</sub> of an inch. I went to a hobby shop and
-        purchased some piano wire. A single wire was taped to the back of each
-        filter which keeps the filter from sagging as you side it into place.
-        The two white strips that you see at both sides of the opening are glow
-        in the dark strips of tape which make it a snap to find the channels to
-        put the filter in when you are changing filters in the dark.
-      </p>
-               <h3>Underside</h3>
+               <div className="technique-6">
+                  <h3>Underside</h3>
+
+                  <p>
+                     There are 4 slotted bolts that hold the whole head to the bottom. I
+                     removed these and used the same 4 bolts to attach the wooden top. You
+                     can see the handle and counter weight used to operate the door. No
+                     catches or fasteners are used to jar the negative when I opened the
+                     filter drawer to change filters just the counter weight holds the door
+                     tightly shut.
+                  </p>
+               </div>
                <div className="leftw">
                   <img
                      src={require("../img/web/enlarger_bottom.jpg")}
                      alt="The underside of the enlarger"
                   />
                </div>
-               <p>
-                  There are 4 slotted bolts that hold the whole head to the bottom. I
-                  removed these and used the same 4 bolts to attach the wooden top. You
-                  can see the handle and counter weight used to operate the door. No
-                  catches or fasteners are used to jar the negative when I opened the
-                  filter drawer to change filters just the counter weight holds the door
-                  tightly shut.
-      </p>
-               <br className="spacer" />
             </div>
          </div>
       );
@@ -445,6 +465,7 @@ class Ground_Glass extends Component {
                <img src={require("../img/css_elements/x.png")} alt="X" onClick={() => { handleClick(this) }} />
             </div>
             <div className="popup">
+               <div className='technique-0'>
                <p>
                   This article was{" "}
                   <a
@@ -481,13 +502,16 @@ class Ground_Glass extends Component {
         with; after all, an 8"&times;10" inch sheet of glass that is only about
         2mm thick is easy to break.
       </p>
-               <h3>Grinding The Blank</h3>
+      </div>
                <div className="rightw">
                   <img
                      src={require("../img/web/ground_glass.jpg")}
                      alt="Grinding the glass"
                   />
                </div>
+            <div className="technique-2">
+               <h3>Grinding The Blank</h3>
+               
                <p>
                   To grind the blank, you will need a small &frac14;" thick sheet of glass
                   to use as the grinding tool. Mine measured 4&frac14;"&times;4&frac14;".
@@ -517,6 +541,8 @@ class Ground_Glass extends Component {
         white in appearance. How long it takes is dependent on the size of the
         grit you use and what the grit is made of.
       </p>
+      </div>
+      <div className="technique-4">
                <h3>The Secret Is In The Grit</h3>
                <p>
                   I choose #380 grit as my starting point since it is on the finer side of
@@ -692,7 +718,7 @@ class Ground_Glass extends Component {
       </p>
             </div>
          </div>
-
+         </div>
       );
    }
 };
