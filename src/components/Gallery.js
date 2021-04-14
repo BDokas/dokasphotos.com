@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { NavLink, Route } from "react-router-dom";
-import Navigation from "./Navigation";
 
 import Photo from "./Photo";
 
@@ -49,16 +48,14 @@ class Gallery extends Component {
             storedPhotos = []
         }
         for (var key of Object.keys(this.state.photos)) {
-            console.log(this.state.photos[key])
+            // this.setState(photos[key['size']], 'matted-11X14')
+            this.state.photos[key]['size'] = 'matted-11X14'
             storedPhotos.push(this.state.photos[key])     
         }
         localStorage.setItem('photos', JSON.stringify(storedPhotos))
         document.getElementById('addToCart').innerHTML = 'Added to Cart!'
         document.getElementById('goToCart').innerHTML = 'Go To Cart'
-        console.log("Stored Photos: ", storedPhotos)
-        console.log("Gallery Photos", this.state.photos)
         document.getElementById('cartButton').innerHTML = 'Cart (' + storedPhotos.length +')'
-        
     }
 
     render() {
@@ -70,7 +67,7 @@ class Gallery extends Component {
         var photo_render = [];
 
         if (this.state.isLoaded) {
-            for (var photo of Object.keys(this.state.photos)) {
+            for (var photo of Object.keys(this.state.photos).sort()) {
                 var photo_name = photo
                     .replace(/[_-]/g, " ")
                     .replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));

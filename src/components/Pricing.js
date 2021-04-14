@@ -65,7 +65,7 @@ const Pricing = () => {
                 </tbody>
             </table>
             <p>
-                6% sales tax will be added to orders shipped within Michigan. Shipping
+                6% sales tax will be added to orders. Shipping
                 costs are variable depending on delivery speed and carrier. Orders are
                 shipped within 3&ndash;4 weeks unless otherwise specified at time of
                 ordering.

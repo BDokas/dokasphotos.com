@@ -12,7 +12,7 @@ class Photo extends Component {
 
         var curr_idx = 0;
 
-        for (var photo of Object.keys(this.props.photos)) {
+        for (var photo of Object.keys(this.props.photos).sort()) {
             if (photo === photo_name) {
                 var name = this.props.photos[photo].name
                 var img = this.props.photos[photo].url
@@ -24,22 +24,28 @@ class Photo extends Component {
         }
     }
 
-    addToCart(keys, curr_idx) {
+    addToCart(keys, curr_idx, selected_size) {
         var storedPhotos = JSON.parse(localStorage.getItem('photos'))
         if (storedPhotos == null) {
             storedPhotos = []
         }
         var photo = this.props.photos[keys[curr_idx]]
+        photo['size'] = selected_size
+        console.log(selected_size)
         storedPhotos.push(photo)
-        console.log(storedPhotos)
         localStorage.setItem('photos', JSON.stringify(storedPhotos))
         document.getElementById('addToCart').innerHTML = 'Added to Cart!'
         document.getElementById('goToCart').innerHTML = 'Go To Cart'
         document.getElementById('cartButton').innerHTML = 'Cart (' + storedPhotos.length +')'
+        setTimeout(() => {
+            if (document.getElementById('addToCart')){
+                document.getElementById('addToCart').innerHTML = 'Add to Cart'
+            }
+        }, 2000);
     }
 
     render() {
-        var keys = Object.keys(this.props.photos)
+        var keys = Object.keys(this.props.photos).sort()
         var { img, curr_idx } = this.getPhotoData();
         var name = keys[curr_idx]
             .replace(/[_-]/g, " ")
@@ -47,32 +53,28 @@ class Photo extends Component {
 
         let prev_button;
         let next_button;
-        if (this.props.purchase) {
-            console.log(localStorage.photos)
+        
+        if (curr_idx > 0) {
+            var prev_index = keys[curr_idx - 1]
+            var prev_photo = this.props.photos[prev_index];
+            prev_button = (
+                <NavLink
+                    to={"/galleries/" + this.props.gallery + "/" + prev_photo.photo}
+                >
+                    &larr; Prev
+                </NavLink>
+            );
         }
-        else {
-            if (curr_idx > 0) {
-                var prev_index = keys[curr_idx - 1]
-                var prev_photo = this.props.photos[prev_index];
-                prev_button = (
-                    <NavLink
-                        to={"/galleries/" + this.props.gallery + "/" + prev_photo.photo}
-                    >
-                        &larr; Prev
-                    </NavLink>
-                );
-            }
-            if (curr_idx < keys.length - 1) {
-                var next_index = keys[curr_idx + 1]
-                var next_photo = this.props.photos[next_index];
-                next_button = (
-                    <NavLink
-                        to={"/galleries/" + this.props.gallery + "/" + next_photo.photo}
-                    >
-                        Next &rarr;
-                    </NavLink>
-                );
-            }
+        if (curr_idx < keys.length - 1) {
+            var next_index = keys[curr_idx + 1]
+            var next_photo = this.props.photos[next_index];
+            next_button = (
+                <NavLink
+                    to={"/galleries/" + this.props.gallery + "/" + next_photo.photo}
+                >
+                    Next &rarr;
+                </NavLink>
+            );
         }
         return (
             <div className="hidden">
@@ -93,9 +95,13 @@ class Photo extends Component {
                         src={img}
                         alt={name}
                     /><p>
-
-                        <a id='addToCart' href='#/' onClick={() => this.addToCart(keys, curr_idx)}>Add to cart</a>
-
+                        <p><select name='size_select' id='size_select'>
+                            <option value='matted-11X14'>Matted Frameless (11" X 14")</option>
+                            <option value='matted-framed-16X20'>Matted & Framed (16" X 20")</option>
+                            <option value='matted-16X20'>Matted Frameless (16" X 20")</option>
+                            <option value='matted-framed-22X28'>Matted & Framed (22" X 28")</option>
+                        </select></p>
+                        <a id='addToCart' href='#/' onClick={() => this.addToCart(keys, curr_idx, document.getElementById('size_select').value)}>Add to Cart</a>
                         <p><NavLink id='goToCart' to={{
                             pathname: "/cart",
                             state: {

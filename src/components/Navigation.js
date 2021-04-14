@@ -15,7 +15,6 @@ class Navigation extends Component {
                    <NavLink to="/contact">Contact</NavLink>
                    <NavLink id="cartButton" to="/cart">{cartText}</NavLink>
                 </div>
-             
    }
 }
  

@@ -30,7 +30,7 @@ class Galleries extends Component {
         var gallery_render = [];
 
         if (this.state.isLoaded) {
-            for (var gallery of Object.keys(this.props.galleries)) {
+            for (var gallery of Object.keys(this.props.galleries).sort()) {
                 // Create a human-friendly name for each gallery
                 var gallery_name = gallery
                     .replace(/[_-]/g, " ")

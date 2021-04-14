@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React, { Component } from "react";
 import { NavLink, Route } from "react-router-dom";
 
@@ -9,18 +8,25 @@ class Cart extends Component {
         super(props);
         this.state = {
             isLoaded: false,
+            sizes: [['matted-11X14', 'Matted Frameless (11" X 14")', 135],
+            ['matted-framed-16X20', 'Matted Framed (16" X 20")', 190],
+            ['matted-16X20', 'Matted Frameless (16" X 20")', 190],
+            ['matted-framed-22X28', 'Matted Framed (22" X 28")', 265]],
+            flowers: [['matted-11X14', 'Matted Frameless (11" X 14")', 155],
+            ['matted-framed-16X20', 'Matted Framed (16" X 20")', 210],
+            ['matted-16X20', 'Matted Frameless (16" X 20")', 215],
+            ['matted-framed-22X28', 'Matted Framed (22" X 28")', 290]]
         };
     }
 
     componentDidMount() {
         this.setState({ isLoaded: true })
-        // this.checkForEmptyCart()
     }
 
     removeFromCart(in_gallery, in_photo) {
         var storedPhotos = JSON.parse(localStorage.getItem('photos'))
         var i = 0
-        for (var { gallery, photo, url } of storedPhotos) {
+        for (var { gallery, photo } of storedPhotos) {
             if (in_gallery === gallery && in_photo === photo) {
                 storedPhotos.splice(i, 1)
                 localStorage.setItem('photos', JSON.stringify(storedPhotos))
@@ -39,13 +45,65 @@ class Cart extends Component {
         document.getElementById('cartButton').innerHTML = 'Cart'
     }
 
+    changeSizeSelect(data) {
+        var new_size = document.getElementById('size_select_' + data.gallery + data.photo).value
+        var storedPhotos = JSON.parse(localStorage.getItem('photos'))
+        var i = 0
+        for (var {gallery, photo} of storedPhotos) {
+            if (data.gallery === gallery && data.photo === photo) {
+                storedPhotos[i].size = new_size
+            }
+            i ++
+        }
+        localStorage.setItem('photos', JSON.stringify(storedPhotos))
+        this.setState({ state: this.state })
+
+    }
+
+    renderSizeSelect(size) {
+        const result = this.state.sizes.map((data, id) => {
+            if (data[0] === size) {
+                return <option selected value={data[0]}>{data[1]}</option>
+            }
+            return <option value={data[0]}>{data[1]}</option>
+        })
+        return result
+    }
+
+    estimatePrice() {
+        var saved_photos = eval(localStorage.photos)
+        var price = 0
+        if (saved_photos === undefined) { return 0}
+        for ( var {gallery, size} of saved_photos) {
+            if (gallery.startsWith('Flowers')) {
+                for (var new_size of this.state.flowers) {
+                    console.log(new_size, size)
+                    if (size === new_size[0]) {
+                        price += new_size[2]
+                    }
+                }
+            } else {
+                for (var new_size of this.state.sizes) {
+                    console.log(new_size, size)
+                    if (size === new_size[0]) {
+                        price += new_size[2]
+                    }
+                }
+            }
+            
+        }
+        var rounded_price = Math.ceil(price * 1.06 * 100) / 100
+        return rounded_price
+    }
+
     renderGalleries() {
         var saved_photos = eval(localStorage.photos)
-        if (saved_photos === undefined) {return}
+        if (saved_photos === undefined) { return }
         const photos = saved_photos.map((data, id) => {
             var photo_name = data.photo
                 .replace(/[_-]/g, " ")
                 .replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));
+
             return <div className="imagewell" key={id}>
                 <div className="image-title">
                     <NavLink
@@ -64,6 +122,11 @@ class Cart extends Component {
                         alt={data.photo}
                     />
                 </NavLink>
+                <p>
+                    <select name='size_select' id={'size_select_'+data.gallery+data.photo} onChange={ () => this.changeSizeSelect(data)}>
+                        {this.renderSizeSelect(data.size)}
+                    </select>
+                </p>
                 <p><a href='#/' onClick={() => this.removeFromCart(data.gallery, data.photo)}>Remove from Cart</a></p>
                 <Route
                     path={"/galleries/" + data.gallery + "/" + data.photo}
@@ -73,7 +136,6 @@ class Cart extends Component {
                 />
             </div>
         })
-
         return photos
     }
 
@@ -83,12 +145,15 @@ class Cart extends Component {
             html.push(
                 <div className="purchase" id="purchase">
                     <h2 id='cartTitle'>Your Cart</h2>
-                    <p><a href= '#/' className='checkout' id= 'emptyCart' onClick={() => this.emptyCart()} >Empty Cart</a></p>
+                    <p><a href='#/' className='checkout' id='emptyCart' onClick={() => this.emptyCart()} >Empty Cart</a></p>
                     <div className="gallery-container">
                         {this.renderGalleries()}
                     </div>
-                    <p><a href='/checkout' className='checkout' id='checkout'>Checkout</a></p>
-
+                    <p>
+                        {/* <a href='/checkout' className='checkout' id='checkout'>Checkout</a> */}
+                        <NavLink to={{pathname:'/checkout', price:this.estimatePrice()}} className='checkout' id='checkout'>Checkout</NavLink>
+                    </p>
+                    <div id='price-estimate'>Estimated price after tax: ${this.estimatePrice()}</div>
                 </div>
             );
         }

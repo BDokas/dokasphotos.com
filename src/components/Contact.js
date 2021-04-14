@@ -25,8 +25,6 @@ class Contact extends React.Component {
    }
 
    handleSubmit(event) {
-      console.log(this.state.name)
-      console.log(event.target)
       event.preventDefault();
       var send_button = document.getElementById('submit-button')
       emailjs.sendForm(
@@ -39,12 +37,10 @@ class Contact extends React.Component {
             (result) => {
                send_button.style.color = "green";
                send_button.innerHTML = "Sent!";
-               console.log(result.text);
             },
             (error) => {
                send_button.style.color = "red";
                send_button.innerHTML = "Send Failed";
-               console.log(error.text);
             }
          )
       // TODO actually send the email lol
@@ -57,7 +53,7 @@ class Contact extends React.Component {
             <p>
                You can email me either via the form below or with your favorite email
                application at&nbsp;
-          <a href="mailto:dick@dokasphotos.com">dick@dokasphotos.com</a>
+          <a href="mailto:rdokas@gmail.com">rdokas@gmail.com</a>
             </p>
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)}>
                <div className="form-group">
