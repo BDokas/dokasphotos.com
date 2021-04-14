@@ -72,24 +72,24 @@ class Checkout extends Component {
         }
         console.log(html)
 
-        // emailjs.send('service_xzh9i3p', 'template_mmcy9rk', {
-        //     to_name: 'Dick',
-        //     from_name: name,
-        //     user_email: email,
-        //     message_html: html
-        // })
-        //     .then(
-        //         (result) => {
-        //             send_button.style.color = "green";
-        //             send_button.innerHTML = "Order Placed!";
-        //             localStorage.clear()
-        //             document.getElementById('cartButton').innerHTML = 'Cart'
-        //         },
-        //         (error) => {
-        //             send_button.style.color = "red";
-        //             send_button.innerHTML = "Send Failed";
-        //         }
-        //     )
+        emailjs.send('service_xzh9i3p', 'template_mmcy9rk', {
+            to_name: 'Dick',
+            from_name: name,
+            user_email: email,
+            message_html: html
+        })
+            .then(
+                (result) => {
+                    send_button.style.color = "green";
+                    send_button.innerHTML = "Order Placed!";
+                    localStorage.clear()
+                    document.getElementById('cartButton').innerHTML = 'Cart'
+                },
+                (error) => {
+                    send_button.style.color = "red";
+                    send_button.innerHTML = "Send Failed";
+                }
+            )
     }
 
     render() {
