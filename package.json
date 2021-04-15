@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bdokas.github.io/dokasphotos.com",
   "name": "dokasphotos.com",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +17,8 @@
     "react-scripts": "^3.4.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -36,5 +39,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://15.222.77.108:8000/"
+  "proxy": "http://15.222.77.108:8000/",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
