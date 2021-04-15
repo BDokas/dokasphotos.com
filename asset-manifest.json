@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/dokasphotos.com/static/css/main.8f954d81.chunk.css",
+    "main.js": "/dokasphotos.com/static/js/main.67f96863.chunk.js",
+    "main.js.map": "/dokasphotos.com/static/js/main.67f96863.chunk.js.map",
+    "runtime-main.js": "/dokasphotos.com/static/js/runtime-main.a9397ef6.js",
+    "runtime-main.js.map": "/dokasphotos.com/static/js/runtime-main.a9397ef6.js.map",
+    "static/js/2.2a132397.chunk.js": "/dokasphotos.com/static/js/2.2a132397.chunk.js",
+    "static/js/2.2a132397.chunk.js.map": "/dokasphotos.com/static/js/2.2a132397.chunk.js.map",
+    "index.html": "/dokasphotos.com/index.html",
+    "precache-manifest.0dc307adb78446ad8c5c1a8e01c716b2.js": "/dokasphotos.com/precache-manifest.0dc307adb78446ad8c5c1a8e01c716b2.js",
+    "service-worker.js": "/dokasphotos.com/service-worker.js",
+    "static/css/main.8f954d81.chunk.css.map": "/dokasphotos.com/static/css/main.8f954d81.chunk.css.map",
+    "static/js/2.2a132397.chunk.js.LICENSE.txt": "/dokasphotos.com/static/js/2.2a132397.chunk.js.LICENSE.txt",
+    "static/media/assembly.jpg": "/dokasphotos.com/static/media/assembly.0325d23c.jpg",
+    "static/media/biography.jpg": "/dokasphotos.com/static/media/biography.4d70e790.jpg",
+    "static/media/burning_mask.jpg": "/dokasphotos.com/static/media/burning_mask.ad246fd2.jpg",
+    "static/media/deardorff.jpg": "/dokasphotos.com/static/media/deardorff.c19c1af9.jpg",
+    "static/media/diffusion_plastic.jpg": "/dokasphotos.com/static/media/diffusion_plastic.9f7ea2e3.jpg",
+    "static/media/dodging_mask.jpg": "/dokasphotos.com/static/media/dodging_mask.04484492.jpg",
+    "static/media/enlarger_bottom.jpg": "/dokasphotos.com/static/media/enlarger_bottom.6f61b2bb.jpg",
+    "static/media/enlarger_front.jpg": "/dokasphotos.com/static/media/enlarger_front.7c4aaffe.jpg",
+    "static/media/enlarger_left.jpg": "/dokasphotos.com/static/media/enlarger_left.905526d1.jpg",
+    "static/media/enlarger_right.jpg": "/dokasphotos.com/static/media/enlarger_right.8ea85c9d.jpg",
+    "static/media/flower_print.jpg": "/dokasphotos.com/static/media/flower_print.70a4c007.jpg",
+    "static/media/ground_glass.jpg": "/dokasphotos.com/static/media/ground_glass.a083d63b.jpg",
+    "static/media/ikeda.jpg": "/dokasphotos.com/static/media/ikeda.88b4fc6e.jpg",
+    "static/media/negative_carrier.jpg": "/dokasphotos.com/static/media/negative_carrier.253941c0.jpg",
+    "static/media/pin_registration.jpg": "/dokasphotos.com/static/media/pin_registration.acbd7ff5.jpg",
+    "static/media/portfolio.jpg": "/dokasphotos.com/static/media/portfolio.9660ed00.jpg",
+    "static/media/x.png": "/dokasphotos.com/static/media/x.bed8223c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9397ef6.js",
+    "static/js/2.2a132397.chunk.js",
+    "static/css/main.8f954d81.chunk.css",
+    "static/js/main.67f96863.chunk.js"
+  ]
+}
