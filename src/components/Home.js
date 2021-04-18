@@ -13,7 +13,7 @@ const home = () => {
             <br className="spacer" />
             <h4>
                 &ldquo;Wells - Retrochoir and Lady Chapel&rdquo; &ndash;{" "}
-                <NavLink to="/galleries/great_britain/wells_-_retrochoir_and_lady_chapel">
+                <NavLink to="/galleries/Great Britain/Wells - Retrochoir and Lady Chapel">
                     View in the galleries
                 </NavLink>
             </h4>
