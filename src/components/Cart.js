@@ -8,14 +8,14 @@ class Cart extends Component {
         super(props);
         this.state = {
             isLoaded: false,
-            sizes: [['matted-11X14', 'Matted Frameless (11" X 14")', 135],
-            ['matted-framed-16X20', 'Matted Framed (16" X 20")', 190],
-            ['matted-16X20', 'Matted Frameless (16" X 20")', 190],
-            ['matted-framed-22X28', 'Matted Framed (22" X 28")', 265]],
-            flowers: [['matted-11X14', 'Matted Frameless (11" X 14")', 155],
-            ['matted-framed-16X20', 'Matted Framed (16" X 20")', 210],
-            ['matted-16X20', 'Matted Frameless (16" X 20")', 215],
-            ['matted-framed-22X28', 'Matted Framed (22" X 28")', 290]]
+            sizes: [['unframed-11X14', 'Frameless (11" X 14")', 135],
+            ['framed-11X14', 'Framed (11" X 14")', 190],
+            ['unframed-16X20', 'Frameless (16" X 20")', 190],
+            ['framed-16X20', 'Framed (16" X 20")', 265]],
+            flowers: [['unframed-11X14', 'Frameless (11" X 14")', 155],
+            ['framed-11X14', 'Framed (11" X 14")', 210],
+            ['unframed-16X20', 'Frameless (16" X 20")', 215],
+            ['framed-16X20', 'Framed (16" X 20")', 290]]
         };
     }
 

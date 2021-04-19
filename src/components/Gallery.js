@@ -13,7 +13,7 @@ class Gallery extends Component {
     }
 
     componentDidMount() {
-        fetch('http://15.222.77.108:8000/api/' + this.getGalleryName())
+        fetch('https://15.222.77.108:8000/api/' + this.getGalleryName())
             .then(response => response.json())
             .then((jsonData) => {
                 this.setState({ photos: jsonData })
@@ -48,8 +48,7 @@ class Gallery extends Component {
             storedPhotos = []
         }
         for (var key of Object.keys(this.state.photos)) {
-            // this.setState(photos[key['size']], 'matted-11X14')
-            this.state.photos[key]['size'] = 'matted-11X14'
+            this.state.photos[key]['size'] = 'unframed-11X14'
             storedPhotos.push(this.state.photos[key])     
         }
         localStorage.setItem('photos', JSON.stringify(storedPhotos))

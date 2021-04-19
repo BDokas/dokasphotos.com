@@ -14,10 +14,10 @@ class Checkout extends Component {
     generateBody() {
         var saved_photos = eval(localStorage.photos)
         var sizes = {
-            'matted-11X14': 'Matted Frameless (11" X 14")',
-            'matted-framed-16X20': 'Matted Framed (16" X 20")',
-            'matted-16X20': 'Matted Frameless (16" X 20")',
-            'matted-framed-22X28': 'Matted Framed (22" X 28")'
+            'unframed-11X14': 'Frameless (11" X 14")',
+            'framed-11X14': 'Framed (11" X 14")',
+            'unframed-16X20': 'Frameless (16" X 20")',
+            'framed-22X28': 'Framed (16" X 20")'
         }
 
         if (saved_photos !== undefined) {

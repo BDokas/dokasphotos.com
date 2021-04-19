@@ -96,10 +96,10 @@ class Photo extends Component {
                         alt={name}
                     /><p>
                         <p><select name='size_select' id='size_select'>
-                            <option value='matted-11X14'>Matted Frameless (11" X 14")</option>
-                            <option value='matted-framed-16X20'>Matted & Framed (16" X 20")</option>
-                            <option value='matted-16X20'>Matted Frameless (16" X 20")</option>
-                            <option value='matted-framed-22X28'>Matted & Framed (22" X 28")</option>
+                            <option value='unframed-11X14'>Frameless (11" X 14")</option>
+                            <option value='framed-11X14'>Framed (11" X 14")</option>
+                            <option value='unframed-16X20'>Frameless (16" X 20")</option>
+                            <option value='framed-16X20'>Framed (16" X 20")</option>
                         </select></p>
                         <a id='addToCart' href='#/' onClick={() => this.addToCart(keys, curr_idx, document.getElementById('size_select').value)}>Add to Cart</a>
                         <p><NavLink id='goToCart' to={{
