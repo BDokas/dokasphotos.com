@@ -161,13 +161,13 @@ a:hover, a:active {
 
 #pricing table.pricing-table,
 .techniques table {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding: 20px;
 }
 
 #pricing table.pricing-table td,
 .techniques table td {
+  width: 120px;
   padding-left: 10px;
   padding-right: 10px;
 }

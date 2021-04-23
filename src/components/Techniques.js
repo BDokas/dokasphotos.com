@@ -152,7 +152,7 @@ class Camera extends Component {
                <div className="technique-2">
                   <p>
                      My field camera is an Ikeda, which is extremely compact and lightweight.
-                     It has been my companion for thirty years now!
+                     It has been my companion for fourty two years now!
       </p></div>
             </div>
          </div>

@@ -25,7 +25,7 @@ const biography = () => {
 				in the United States and Canada. He has authored articles in national
         publications.{" "}
 				<a href="http://www.phototechmag.com/">Photo Techniques</a> featured his
-        photographs in 2003 as well as this year in the magazine.
+        photographs from 2003 until they stopped publication.
       </p>
 			<p>
 				He has exhibited in the U.S. and in Europe in one-man and group
