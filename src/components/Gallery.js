@@ -13,7 +13,7 @@ class Gallery extends Component {
     }
 
     componentDidMount() {
-        fetch('https://dokasphotovault.com/api/' + this.getGalleryName())
+        fetch('https://api.dokasphotos.com/api/' + this.getGalleryName())
             .then(response => response.json())
             .then((jsonData) => {
                 this.setState({ photos: jsonData })

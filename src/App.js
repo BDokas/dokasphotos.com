@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://dokasphotovault.com/api/galleries')
+    fetch('https://api.dokasphotos.com/api/galleries')
        .then(response => response.json())
        .then((jsonData) => {
          this.setState({galleries: jsonData})
