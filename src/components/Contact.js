@@ -43,7 +43,6 @@ class Contact extends React.Component {
                send_button.innerHTML = "Send Failed";
             }
          )
-      // TODO actually send the email lol
    }
 
    render() {
@@ -81,14 +80,14 @@ class Contact extends React.Component {
                   />
                </div>
                <div className="form-group">
-                  <p><label htmlFor="message">Message:</label></p>
+                  <p><label htmlFor="message_html">Message:</label></p>
                   <textarea
                      id='contact-input'
                      className="form-control"
                      rows="5"
                      value={this.state.message}
                      onChange={this.onMessageChange.bind(this)}
-                     name="message"
+                     name="message_html"
                      required
                   />
                </div>

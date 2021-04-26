@@ -84,8 +84,9 @@ class App extends Component {
           </div>
         </div>
         <footer>
-          ©2004-20 <NavLink to={"/contact"}>Dick Dokas</NavLink>·
-          <NavLink to={"/legal"}>All Rights Reserved</NavLink>
+          ©2004-21 <NavLink to={"/contact"}>Dick Dokas</NavLink> . 
+          <NavLink to={"/legal"}>All Rights Reserved</NavLink> . Site Created by
+          <a href='https://briandokas.com'>Brian Dokas</a>
         </footer>
       </BrowserRouter>
     );

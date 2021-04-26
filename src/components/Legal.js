@@ -6,7 +6,7 @@ const legal = () => {
         <div className="legal">
             <h2>Copyright Information</h2>
             <p>
-                This site&rsquo;s visual and written content is copyright 2004 Richard
+                This site&rsquo;s visual and written content is copyright 2021 Richard
                 Dokas. You can briefly quote selections with attribution, but whole
                 reproductions and image display is forbidden without{" "}
                 <NavLink to={"/contact"}>obtaining</NavLink> written permission from
@@ -21,7 +21,7 @@ const legal = () => {
                 This site&rsquo;s code may be freely adapted and
                 studied for learning purposes only. The particular combination of
                 layout, typography, images, sizes and colors, however, is unique to this
-                site and copyright 2004 Richard Dokas.
+                site and copyright 2021 Richard Dokas.
       </p>
         </div>
     );
