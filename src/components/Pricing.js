@@ -40,8 +40,8 @@ const Pricing = () => {
                     <tr className="odd">
                         <td>16"&times;20"</td>
                         <td>22"&times;28"</td>
-                        <td>$190</td>
-                        <td>$265</td>
+                        <td>$200</td>
+                        <td>$285</td>
                     </tr>
                 </tbody>
             </table>
@@ -59,8 +59,8 @@ const Pricing = () => {
                     <tr className="odd">
                         <td>16"&times;20"</td>
                         <td>22"&times;28"</td>
-                        <td>$215</td>
-                        <td>$290</td>
+                        <td>$225</td>
+                        <td>$310</td>
                     </tr>
                 </tbody>
             </table>

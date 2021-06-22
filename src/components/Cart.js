@@ -10,12 +10,12 @@ class Cart extends Component {
             isLoaded: false,
             sizes: [['unframed-11X14', 'Frameless (11" X 14")', 135],
             ['framed-11X14', 'Framed (11" X 14")', 190],
-            ['unframed-16X20', 'Frameless (16" X 20")', 190],
-            ['framed-16X20', 'Framed (16" X 20")', 265]],
+            ['unframed-16X20', 'Frameless (16" X 20")', 200],
+            ['framed-16X20', 'Framed (16" X 20")', 285]],
             flowers: [['unframed-11X14', 'Frameless (11" X 14")', 155],
             ['framed-11X14', 'Framed (11" X 14")', 210],
-            ['unframed-16X20', 'Frameless (16" X 20")', 215],
-            ['framed-16X20', 'Framed (16" X 20")', 290]]
+            ['unframed-16X20', 'Frameless (16" X 20")', 225],
+            ['framed-16X20', 'Framed (16" X 20")', 310]]
         };
     }
 
