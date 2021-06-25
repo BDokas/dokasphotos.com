@@ -549,68 +549,8 @@ div.assembly-3 {
   grid-row: 5;
 }
 
-/* div.right,
-div.rightw,
-div.left,
-div.leftw {
-  font-size: 90%;
-  line-height: 16px;
-  margin: 0;
-  padding-bottom: 15px;
-  width: 170px;
-  text-align: justify;
-}
-
-div.right img {
-  margin-bottom: 5px;
-}
-
-
-*/
-/* 
-div.left,
-div.leftw {
-  float: left;
-  padding-right: 40px;
-}
-div.right,
-div.rightw {
-  float: right;
-  padding-left: 40px;
-}
-div.right img,
-div.rightw img,
-div.left img,
-div.leftw img {
-
-  width: 225px;
-} */
-/*
-div.right img,
-div.rightw img {
-  float: right;
-}
-div.left img,
-div.leftw img {
-  float: left;
-} */
-
-/* hr {
-  clear: both;
-  margin: 35px auto;
-}
-
-sup,
-sub {
-  font-size: 75%;
-  line-height: 33%;
-}
-.spacer {
-  clear: both;
-} */
-
 /* For Desktop */
-@media only screen and (min-width: 900px) and (min-height:1000px){
+@media only screen and (min-width: 900px) and (min-height:800px){
   #content {
     padding-bottom: 50px;
     padding-left: 50px;
